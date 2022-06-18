@@ -30,7 +30,7 @@ function FormInput(props) {
         deactivateLabel();
       }
     });
-  }, []);
+  });
 
   // useEffect(() => {
   //   // ------------------------------------------------------- //

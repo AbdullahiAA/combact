@@ -2631,6 +2631,7 @@ textarea.form-control-lg {
   background-position: center;
   background-size: contain;
   border: 1px solid rgba(0, 0, 0, 0.25);
+  cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -2682,6 +2683,10 @@ textarea.form-control-lg {
   -webkit-filter: none;
   filter: none;
   opacity: 0.5;
+}
+
+.form-check-label {
+  cursor: pointer;
 }
 
 .form-check-input[disabled] ~ .form-check-label,
@@ -13664,6 +13669,7 @@ nav.navbar .search-box form input {
   top: 1.225rem;
   left: 0;
   cursor: text;
+  pointer-events: none;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
   -webkit-transform: none;

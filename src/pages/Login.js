@@ -1,4 +1,3 @@
-import "./Login.css";
 import FormInput from "../components/global/FormInput";
 import FormLabel from "../components/global/FormLabel";
 
@@ -25,7 +24,8 @@ function Login() {
               <div className="col-lg-6 bg-white">
                 <div className="d-flex align-items-center px-4 px-lg-5 h-100">
                   <form className="login-form py-5 w-100">
-                    <h2 className="display-6">Welcome back, Champ!</h2>
+                    <h2 className="display-6 fs-1">Welcome back, Champ!</h2>
+
                     <div className="input-material-group mb-3">
                       <FormInput
                         id="login-username"
