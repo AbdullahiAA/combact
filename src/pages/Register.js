@@ -2,18 +2,42 @@ import FormCheckbox from "../components/global/FormCheckbox";
 import FormCheckboxLabel from "../components/global/FormCheckboxLabel";
 import FormInput from "../components/global/FormInput";
 import FormLabel from "../components/global/FormLabel";
+import { useNavigate } from "react-router-dom";
 
 function Register() {
+  const navigate = useNavigate();
+
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    navigate("/login");
+  }
+
   return (
     <div className="login-page">
       <div className="container d-flex align-items-center position-relative py-5">
         <div className="card shadow-sm w-100 rounded overflow-hidden bg-none">
           <div className="card-body p-0">
             <div className="row gx-0 align-items-stretch">
+              {/* Logo & Information Panel */}
+              <div className="col-lg-6">
+                <div className="info d-flex justify-content-center flex-column p-4 h-100">
+                  <div className="py-5">
+                    <h1 className="display-6 fw-bold">COMBACT</h1>
+                    <p className="fw-light mb-0">
+                      Computer Based Calculus Tutor
+                    </p>
+                  </div>
+                </div>
+              </div>
+
               {/* Form Panel */}
               <div className="col-lg-6 bg-white">
                 <div className="d-flex align-items-center px-4 px-lg-5 h-100">
-                  <form className="register-form py-5 w-100">
+                  <form
+                    className="register-form py-5 w-100"
+                    onSubmit={handleSubmit}
+                  >
                     <h2 className="display-6 fs-1">
                       Welcome to COMBACT, Champ!
                     </h2>
@@ -78,22 +102,24 @@ function Register() {
                       </div>
                     </div>
 
-                    <div className="input-material-group mb-3">
-                      <FormInput
-                        type="password"
-                        name="registerPassword"
-                        data-validate-field="registerPassword"
-                      />
-                      <FormLabel>Password</FormLabel>
-                    </div>
+                    <div className="d-md-flex">
+                      <div className="input-material-group mb-3 col-md-6">
+                        <FormInput
+                          type="password"
+                          name="registerPassword"
+                          data-validate-field="registerPassword"
+                        />
+                        <FormLabel>Password</FormLabel>
+                      </div>
 
-                    <div className="input-material-group mb-3">
-                      <FormInput
-                        type="password"
-                        name="cPassword"
-                        data-validate-field="cPassword"
-                      />
-                      <FormLabel>Confirm Password</FormLabel>
+                      <div className="input-material-group mb-3 col-md-6">
+                        <FormInput
+                          type="password"
+                          name="cPassword"
+                          data-validate-field="cPassword"
+                        />
+                        <FormLabel>Confirm Password</FormLabel>
+                      </div>
                     </div>
 
                     <div className="input-material-group mb-3">
@@ -161,18 +187,6 @@ function Register() {
                       Login here
                     </a>
                   </form>
-                </div>
-              </div>
-
-              {/* Logo & Information Panel */}
-              <div className="col-lg-6">
-                <div className="info d-flex justify-content-center flex-column p-4 h-100">
-                  <div className="py-5">
-                    <h1 className="display-6 fw-bold">COMBACT</h1>
-                    <p className="fw-light mb-0">
-                      Computer Based Calculus Tutor
-                    </p>
-                  </div>
                 </div>
               </div>
             </div>

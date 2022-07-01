@@ -61,7 +61,7 @@ function Login() {
                     <small className="text-gray-500">
                       Do you want to start learning with us today?{" "}
                     </small>
-                    <a className="text-sm text-paleBlue" href="/">
+                    <a className="text-sm text-paleBlue" href="/register">
                       Register here
                     </a>
                   </form>
