@@ -10,7 +10,7 @@ function Register() {
   function handleSubmit(e) {
     e.preventDefault();
 
-    navigate("/login");
+    navigate("/dashboard");
   }
 
   return (
