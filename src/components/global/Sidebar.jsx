@@ -22,14 +22,16 @@ function Sidebar() {
       <span className="text-uppercase text-gray-400 text-xs letter-spacing-0 mx-3 px-2 heading">
         Rank goes here
       </span>
+
       <ul className="list-unstyled py-4">
-        <li className="sidebar-item active">
-          <NavLink className="sidebar-link" to="index.html">
+        <li className="sidebar-item">
+          <NavLink className="sidebar-link" to="/dashboard">
             <svg
               className="svg-icon svg-icon-sm svg-icon-light me-xl-2"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
+              strokeWidth={2}
             >
               <path
                 strokeLinecap="round"
@@ -42,11 +44,7 @@ function Sidebar() {
         </li>
 
         <li className="sidebar-item">
-          <NavLink
-            className="sidebar-link"
-            to="#exampledropdownDropdown"
-            data-bs-toggle="collapse"
-          >
+          <NavLink className="sidebar-link" to="/lessons">
             <svg
               className="svg-icon svg-icon-sm svg-icon-light me-xl-2"
               fill="none"
@@ -62,26 +60,10 @@ function Sidebar() {
             </svg>
             Lessons
           </NavLink>
-          <ul className="collapse list-unstyled " id="exampledropdownDropdown">
-            <li>
-              <NavLink className="sidebar-link" to="/">
-                1.0 Introduction to Calculus
-              </NavLink>
-            </li>
-            <li>
-              <NavLink className="sidebar-link" to="/">
-                1.1 Branches of Calculus
-              </NavLink>
-            </li>
-            <li>
-              <NavLink className="sidebar-link" to="/">
-                1.2 Differential Calculus
-              </NavLink>
-            </li>
-          </ul>
         </li>
+
         <li className="sidebar-item">
-          <NavLink className="sidebar-link" to="tables.html">
+          <NavLink className="sidebar-link" to="/other-resources">
             <svg
               className="svg-icon svg-icon-sm svg-icon-light me-xl-2"
               fill="none"
@@ -98,8 +80,9 @@ function Sidebar() {
             Other Resources
           </NavLink>
         </li>
+
         <li className="sidebar-item">
-          <NavLink className="sidebar-link" to="charts.html">
+          <NavLink className="sidebar-link" to="/quizzes">
             <svg
               className="svg-icon svg-icon-sm svg-icon-light me-xl-2"
               fill="none"
@@ -116,8 +99,9 @@ function Sidebar() {
             Quizzes
           </NavLink>
         </li>
+
         <li className="sidebar-item">
-          <NavLink className="sidebar-link" to="forms.html">
+          <NavLink className="sidebar-link" to="/profile">
             <svg
               className="svg-icon svg-icon-sm svg-icon-light me-xl-2"
               fill="none"
@@ -136,7 +120,7 @@ function Sidebar() {
         </li>
 
         <li className="sidebar-item">
-          <NavLink className="sidebar-link" to="login.html">
+          <NavLink className="sidebar-link" to="/settings">
             <svg
               className="svg-icon svg-icon-sm svg-icon-light me-xl-2"
               fill="none"

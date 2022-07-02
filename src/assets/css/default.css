@@ -13154,21 +13154,21 @@ nav.side-navbar.shrinked .sidebar-header .title {
   background: #eef5f9;
 }
 
-.sidebar-item.active > .sidebar-link {
+.sidebar-link.active {
   color: #fff;
   border-left: 4px solid #3b25e6;
   background: #796aee;
 }
 
-.sidebar-item.active > .sidebar-link:hover {
+.sidebar-link.active:hover {
   background: #796aee;
 }
 
-.sidebar-item li.active > .sidebar-link {
+/* .sidebar-link.active {
   color: #fff;
   border-left: 4px solid #3b25e6;
   background: #8e81f1;
-}
+} */
 
 .sidebar-item .collapse {
   background: #eef5f9;

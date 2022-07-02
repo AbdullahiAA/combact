@@ -17,7 +17,7 @@ function Layout({ pageTitle, children }) {
             </div>
           </header>
 
-          {children}
+          <main className="container-fluid my-5">{children}</main>
 
           <footer
             className="position-absolute bottom-0 bg-darkBlue text-white text-center py-3 w-100 text-xs"

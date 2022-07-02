@@ -1,5 +1,5 @@
 import React from "react";
-import Layout from "../components/Layout/Layout";
+import Layout from "../../components/Layout/Layout";
 // import avatar1 from "../assets/img/avatar-1.jpg";
 // import avatar2 from "../assets/img/avatar-2.jpg";
 // import avatar3 from "../assets/img/avatar-3.jpg";
@@ -9,179 +9,175 @@ import Layout from "../components/Layout/Layout";
 function Dashboard() {
   return (
     <Layout pageTitle={"Dashboard"}>
-      <section className="pb-0">
-        <div className="container-fluid">
-          <div className="card mb-0">
-            <div className="card-body">
-              <div className="row gx-5 bg-white">
-                <div className="col-xl-3 col-sm-6 py-4 border-lg-end border-gray-200">
-                  <div className="d-flex align-items-center">
-                    <div className="icon flex-shrink-0 bg-violet">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="svg-icon svg-icon-sm svg-icon-light"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
-                        />
-                      </svg>
-                    </div>
-                    <div className="mx-3">
-                      <h6 className="h4 fw-light text-gray-600 mb-3">
-                        Lessons
-                        <br />
-                        Completed
-                      </h6>
-                      <div className="progress" style={{ height: "4px" }}>
-                        <div
-                          className="progress-bar bg-violet"
-                          role="progressbar"
-                          style={{ width: "25%", height: "4px" }}
-                          aria-valuenow="25"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
-                    </div>
-                    <div className="number">
-                      <strong className="text-lg">25</strong>
-                    </div>
+      <div className="card py-0 mb-0">
+        <div className="card-body">
+          <div className="row gx-5 bg-white">
+            <div className="col-xl-3 col-sm-6 py-4 border-lg-end border-gray-200">
+              <div className="d-flex align-items-center">
+                <div className="icon flex-shrink-0 bg-violet">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="svg-icon svg-icon-sm svg-icon-light"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                    />
+                  </svg>
+                </div>
+                <div className="mx-3">
+                  <h6 className="h4 fw-light text-gray-600 mb-3">
+                    Lessons
+                    <br />
+                    Completed
+                  </h6>
+                  <div className="progress" style={{ height: "4px" }}>
+                    <div
+                      className="progress-bar bg-violet"
+                      role="progressbar"
+                      style={{ width: "25%", height: "4px" }}
+                      aria-valuenow="25"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
                   </div>
                 </div>
+                <div className="number">
+                  <strong className="text-lg">25</strong>
+                </div>
+              </div>
+            </div>
 
-                <div className="col-xl-3 col-sm-6 py-4 border-lg-end border-gray-200">
-                  <div className="d-flex align-items-center">
-                    <div className="icon flex-shrink-0 bg-red">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        class="svg-icon svg-icon-sm svg-icon-light"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        stroke-width="2"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
-                        />
-                      </svg>
-                    </div>
-                    <div className="mx-3">
-                      <h6 className="h4 fw-light text-gray-600 mb-3">
-                        Total
-                        <br />
-                        Lessons
-                      </h6>
-                      <div className="progress" style={{ height: "4px" }}>
-                        <div
-                          className="progress-bar bg-red"
-                          role="progressbar"
-                          style={{ width: "70%", height: "4px" }}
-                          aria-valuenow="70"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
-                    </div>
-                    <div className="number">
-                      <strong className="text-lg">70</strong>
-                    </div>
+            <div className="col-xl-3 col-sm-6 py-4 border-lg-end border-gray-200">
+              <div className="d-flex align-items-center">
+                <div className="icon flex-shrink-0 bg-red">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="svg-icon svg-icon-sm svg-icon-light"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
+                    />
+                  </svg>
+                </div>
+                <div className="mx-3">
+                  <h6 className="h4 fw-light text-gray-600 mb-3">
+                    Total
+                    <br />
+                    Lessons
+                  </h6>
+                  <div className="progress" style={{ height: "4px" }}>
+                    <div
+                      className="progress-bar bg-red"
+                      role="progressbar"
+                      style={{ width: "70%", height: "4px" }}
+                      aria-valuenow="70"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
                   </div>
                 </div>
+                <div className="number">
+                  <strong className="text-lg">70</strong>
+                </div>
+              </div>
+            </div>
 
-                <div className="col-xl-3 col-sm-6 py-4 border-lg-end border-gray-200">
-                  <div className="d-flex align-items-center">
-                    <div className="icon flex-shrink-0 bg-green">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="svg-icon svg-icon-sm svg-icon-light"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                        />
-                      </svg>
-                    </div>
-                    <div className="mx-3">
-                      <h6 className="h4 fw-light text-gray-600 mb-3">
-                        Attempted
-                        <br />
-                        Quizzes
-                      </h6>
-                      <div className="progress" style={{ height: "4px" }}>
-                        <div
-                          className="progress-bar bg-green"
-                          role="progressbar"
-                          style={{ width: "40%", height: "4px" }}
-                          aria-valuenow="40"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
-                    </div>
-                    <div className="number">
-                      <strong className="text-lg">40</strong>
-                    </div>
+            <div className="col-xl-3 col-sm-6 py-4 border-lg-end border-gray-200">
+              <div className="d-flex align-items-center">
+                <div className="icon flex-shrink-0 bg-green">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="svg-icon svg-icon-sm svg-icon-light"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                    />
+                  </svg>
+                </div>
+                <div className="mx-3">
+                  <h6 className="h4 fw-light text-gray-600 mb-3">
+                    Attempted
+                    <br />
+                    Quizzes
+                  </h6>
+                  <div className="progress" style={{ height: "4px" }}>
+                    <div
+                      className="progress-bar bg-green"
+                      role="progressbar"
+                      style={{ width: "40%", height: "4px" }}
+                      aria-valuenow="40"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
                   </div>
                 </div>
+                <div className="number">
+                  <strong className="text-lg">40</strong>
+                </div>
+              </div>
+            </div>
 
-                <div className="col-xl-3 col-sm-6 py-4">
-                  <div className="d-flex align-items-center">
-                    <div className="icon flex-shrink-0 bg-orange">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="svg-icon svg-icon-sm svg-icon-light"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                        />
-                      </svg>
-                    </div>
-                    <div className="mx-3">
-                      <h6 className="h4 fw-light text-gray-600 mb-3">
-                        Total
-                        <br />
-                        Quizzes
-                      </h6>
-                      <div className="progress" style={{ height: "4px" }}>
-                        <div
-                          className="progress-bar bg-orange"
-                          role="progressbar"
-                          style={{ width: "50%", height: "4px" }}
-                          aria-valuenow="50"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
-                    </div>
-                    <div className="number">
-                      <strong className="text-lg">50</strong>
-                    </div>
+            <div className="col-xl-3 col-sm-6 py-4">
+              <div className="d-flex align-items-center">
+                <div className="icon flex-shrink-0 bg-orange">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="svg-icon svg-icon-sm svg-icon-light"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                    />
+                  </svg>
+                </div>
+                <div className="mx-3">
+                  <h6 className="h4 fw-light text-gray-600 mb-3">
+                    Total
+                    <br />
+                    Quizzes
+                  </h6>
+                  <div className="progress" style={{ height: "4px" }}>
+                    <div
+                      className="progress-bar bg-orange"
+                      role="progressbar"
+                      style={{ width: "50%", height: "4px" }}
+                      aria-valuenow="50"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
                   </div>
+                </div>
+                <div className="number">
+                  <strong className="text-lg">50</strong>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       {/* <section className="pb-0">
             <div className="container-fluid">
