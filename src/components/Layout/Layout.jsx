@@ -17,10 +17,10 @@ function Layout({ pageTitle, children }) {
             </div>
           </header>
 
-          <main className="container-fluid my-5">{children}</main>
+          <main className="container-fluid py-5">{children}</main>
 
           <footer
-            className="position-absolute bottom-0 bg-darkBlue text-white text-center py-3 w-100 text-xs"
+            className="bg-darkBlue text-white text-center py-3 w-100 text-xs"
             id="footer"
           >
             <div className="container-fluid">
