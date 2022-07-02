@@ -9,6 +9,7 @@ import Profile from "./pages/Profile/Profile";
 import Quizzes from "./pages/Quizzes/Quizzes";
 import Settings from "./pages/Settings/Settings";
 import About from "./pages/About/About";
+import LessonPage from "./pages/Lessons/LessonPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/lessons" element={<Lessons />} />
+          <Route path="/lessons/:lessonID" element={<LessonPage />} />
           <Route path="/other-resources" element={<OtherResources />} />
           <Route path="/quizzes" element={<Quizzes />} />
           <Route path="/profile" element={<Profile />} />

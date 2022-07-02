@@ -1,8 +1,13 @@
 import React from "react";
 import Header from "../global/Header";
 import Sidebar from "../global/Sidebar";
+import { Link } from "react-router-dom";
 
-function Layout({ pageTitle, children }) {
+// @subTitle
+// previous: { title: "Lessons", reference: "/lessons" },
+// current: "Lesson title",
+
+function Layout({ pageTitle, subTitle = null, children }) {
   return (
     <div className="page">
       <Header />
@@ -11,11 +16,38 @@ function Layout({ pageTitle, children }) {
         <Sidebar />
 
         <div className="content-inner w-100">
-          <header className="bg-white shadow-sm px-4 py-3 z-index-20">
-            <div className="container-fluid px-0">
-              <h2 className="mb-0 p-1">{pageTitle}</h2>
+          {pageTitle && (
+            <header className="bg-white shadow-sm px-4 py-3 z-index-20">
+              <div className="container-fluid px-0">
+                <h2 className="mb-0 p-1">{pageTitle}</h2>
+              </div>
+            </header>
+          )}
+
+          {subTitle && (
+            <div className="bg-white">
+              <div className="container-fluid">
+                <nav aria-label="breadcrumb">
+                  <ol className="breadcrumb mb-0 py-3">
+                    <li className="breadcrumb-item">
+                      <Link
+                        className="fw-light"
+                        to={subTitle?.previous?.reference}
+                      >
+                        {subTitle?.previous?.title}
+                      </Link>
+                    </li>
+                    <li
+                      className="breadcrumb-item active fw-light"
+                      aria-current="page"
+                    >
+                      {subTitle?.current}
+                    </li>
+                  </ol>
+                </nav>
+              </div>
             </div>
-          </header>
+          )}
 
           <main className="container-fluid py-5">{children}</main>
 
