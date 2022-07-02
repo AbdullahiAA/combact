@@ -2,7 +2,7 @@ import FormCheckbox from "../components/global/FormCheckbox";
 import FormCheckboxLabel from "../components/global/FormCheckboxLabel";
 import FormInput from "../components/global/FormInput";
 import FormLabel from "../components/global/FormLabel";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 function Register() {
   const navigate = useNavigate();
@@ -183,9 +183,9 @@ function Register() {
                     <small className="text-gray-500">
                       Want to continue with your learning?{" "}
                     </small>
-                    <a className="text-sm text-paleBlue" href="/login">
+                    <Link className="text-sm text-paleBlue" to="/login">
                       Login here
-                    </a>
+                    </Link>
                   </form>
                 </div>
               </div>

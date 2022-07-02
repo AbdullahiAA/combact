@@ -30,7 +30,7 @@ function Header() {
                 <NavLink
                   className="nav-link text-white"
                   id="notifications"
-                  to="/"
+                  to="/notifications"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
@@ -193,9 +193,7 @@ function Header() {
               <li className="nav-item dropdown">
                 <NavLink
                   className="nav-link text-white"
-                  id="notifications"
-                  to="/"
-                  data-bs-toggle="dropdown"
+                  to="/about"
                   aria-expanded="false"
                   title="About"
                 >
@@ -217,7 +215,7 @@ function Header() {
               </li>
 
               <li className="nav-item">
-                <NavLink className="nav-link text-white" to="login.html">
+                <NavLink className="nav-link text-white" to="/login">
                   <span className="d-none d-sm-inline">Logout </span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

@@ -1,7 +1,16 @@
 import FormInput from "../components/global/FormInput";
 import FormLabel from "../components/global/FormLabel";
 
+import { useNavigate, Link } from "react-router-dom";
+
 function Login() {
+  const navigate = useNavigate();
+
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    navigate("/dashboard");
+  }
   return (
     <div className="login-page">
       <div className="container d-flex align-items-center position-relative py-5">
@@ -23,7 +32,10 @@ function Login() {
               {/* Form Panel */}
               <div className="col-lg-6 bg-white">
                 <div className="d-flex align-items-center px-4 px-lg-5 h-100">
-                  <form className="login-form py-5 w-100">
+                  <form
+                    className="login-form py-5 w-100"
+                    onSubmit={handleSubmit}
+                  >
                     <h2 className="display-6 fs-1">Welcome back, Champ!</h2>
 
                     <div className="input-material-group mb-3">
@@ -54,16 +66,16 @@ function Login() {
                       Login
                     </button>
                     <br />
-                    <a className="text-sm text-paleBlue" href="/">
+                    <Link className="text-sm text-paleBlue" to="/">
                       Forgot Password?
-                    </a>
+                    </Link>
                     <br />
                     <small className="text-gray-500">
                       Do you want to start learning with us today?{" "}
                     </small>
-                    <a className="text-sm text-paleBlue" href="/register">
+                    <Link className="text-sm text-paleBlue" to="/register">
                       Register here
-                    </a>
+                    </Link>
                   </form>
                 </div>
               </div>

@@ -13,9 +13,7 @@ function Sidebar() {
         />
         <div className="ms-3 title">
           <h1 className="h4 mb-2">Mark Stephen</h1>
-          <p className="text-sm text-gray-500 fw-light mb-0 lh-1">
-            Web Designer
-          </p>
+          <p className="text-sm text-gray-500 fw-light mb-0 lh-1">@mark87</p>
         </div>
       </div>
 

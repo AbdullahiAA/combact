@@ -8,6 +8,7 @@ import OtherResources from "./pages/OtherResources/OtherResources";
 import Profile from "./pages/Profile/Profile";
 import Quizzes from "./pages/Quizzes/Quizzes";
 import Settings from "./pages/Settings/Settings";
+import About from "./pages/About/About";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/quizzes" element={<Quizzes />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/settings" element={<Settings />} />
+          <Route path="/about" element={<About />} />
         </Routes>
       </div>
     </BrowserRouter>
