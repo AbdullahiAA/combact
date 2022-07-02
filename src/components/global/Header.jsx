@@ -61,10 +61,9 @@ function Header() {
                   </svg>
                 </a>
               </li>
-              {/* <!-- Notifications--> */}
 
+              {/* <!-- Notifications--> */}
               <li className="nav-item dropdown">
-                {" "}
                 <a
                   className="nav-link text-white"
                   id="notifications"
@@ -72,8 +71,19 @@ function Header() {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <svg className="svg-icon svg-icon-xs svg-icon-light">
-                    {/* <use xlink:href="#chart-1"> </use> */}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="svg-icon svg-icon-xs svg-icon-light"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                    />
                   </svg>
                   <span className="badge bg-red badge-corner fw-normal">
                     12
@@ -87,13 +97,24 @@ function Header() {
                     <a className="dropdown-item py-3" href="/">
                       <div className="d-flex">
                         <div className="icon icon-sm bg-blue">
-                          <svg className="svg-icon svg-icon-xs svg-icon-light">
-                            {/* <use xlink:href="#envelope-1"> </use> */}
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="svg-icon svg-icon-xs svg-icon-light"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+                            />
                           </svg>
                         </div>
                         <div className="ms-3">
                           <span className="h6 d-block fw-normal mb-1 text-xs text-gray-600">
-                            You have 6 new messages{" "}
+                            You have 6 new messages
                           </span>
                           <small className="small text-gray-600">
                             4 minutes ago
@@ -106,8 +127,19 @@ function Header() {
                     <a className="dropdown-item py-3" href="/">
                       <div className="d-flex">
                         <div className="icon icon-sm bg-green">
-                          <svg className="svg-icon svg-icon-xs svg-icon-light">
-                            {/* <use xlink:href="#chats-1"> </use> */}
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="svg-icon svg-icon-xs svg-icon-light"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+                            />
                           </svg>
                         </div>
                         <div className="ms-3">
@@ -125,8 +157,19 @@ function Header() {
                     <a className="dropdown-item py-3" href="/">
                       <div className="d-flex">
                         <div className="icon icon-sm bg-orange">
-                          <svg className="svg-icon svg-icon-xs svg-icon-light">
-                            {/* <use xlink:href="#checked-window-1"> </use> */}
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="svg-icon svg-icon-xs svg-icon-light"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+                            />
                           </svg>
                         </div>
                         <div className="ms-3">
@@ -144,8 +187,19 @@ function Header() {
                     <a className="dropdown-item py-3" href="/">
                       <div className="d-flex">
                         <div className="icon icon-sm bg-green">
-                          <svg className="svg-icon svg-icon-xs svg-icon-light">
-                            {/* <use xlink:href="#chats-1"> </use> */}
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="svg-icon svg-icon-xs svg-icon-light"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth={2}
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"
+                            />
                           </svg>
                         </div>
                         <div className="ms-3">
@@ -164,18 +218,42 @@ function Header() {
                       className="dropdown-item all-notifications text-center"
                       href="/"
                     >
-                      {" "}
                       <strong className="text-xs text-gray-600">
-                        view all notifications{" "}
+                        view all notifications
                       </strong>
                     </a>
                   </li>
                 </ul>
               </li>
-              {/* <!-- Messages                        --> */}
 
               <li className="nav-item dropdown">
-                {" "}
+                <a
+                  className="nav-link text-white"
+                  id="notifications"
+                  href="/"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  title="About"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="svg-icon svg-icon-xs svg-icon-light"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </a>
+              </li>
+
+              {/* <!-- Messages  --> */}
+              {/* <li className="nav-item dropdown">
                 <a
                   className="nav-link text-white"
                   id="messages"
@@ -184,9 +262,6 @@ function Header() {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <svg className="svg-icon svg-icon-xs svg-icon-light">
-                    {/* <use xlink:href="#envelope-1"> </use> */}
-                  </svg>
                   <span className="badge bg-orange badge-corner fw-normal">
                     10
                   </span>
@@ -197,7 +272,6 @@ function Header() {
                 >
                   <li>
                     <a className="dropdown-item d-flex py-3" href="/">
-                      {" "}
                       <img
                         className="img-fluid rounded-circle"
                         src={avatar1}
@@ -209,7 +283,6 @@ function Header() {
                           Jason Doe
                         </span>
                         <small className="small text-gray-600">
-                          {" "}
                           Sent You Message
                         </small>
                       </div>
@@ -217,7 +290,6 @@ function Header() {
                   </li>
                   <li>
                     <a className="dropdown-item d-flex py-3" href="/">
-                      {" "}
                       <img
                         className="img-fluid rounded-circle"
                         src={avatar2}
@@ -229,7 +301,6 @@ function Header() {
                           Jason Doe
                         </span>
                         <small className="small text-gray-600">
-                          {" "}
                           Sent You Message
                         </small>
                       </div>
@@ -237,7 +308,6 @@ function Header() {
                   </li>
                   <li>
                     <a className="dropdown-item d-flex py-3" href="/">
-                      {" "}
                       <img
                         className="img-fluid rounded-circle"
                         src={avatar3}
@@ -249,7 +319,6 @@ function Header() {
                           Jason Doe
                         </span>
                         <small className="small text-gray-600">
-                          {" "}
                           Sent You Message
                         </small>
                       </div>
@@ -257,67 +326,31 @@ function Header() {
                   </li>
                   <li>
                     <a className="dropdown-item text-center" href="/">
-                      {" "}
                       <strong className="text-xs text-gray-600">
-                        Read all messages{" "}
+                        Read all messages
                       </strong>
                     </a>
                   </li>
                 </ul>
-              </li>
-              {/* <!-- Languages dropdown    --> */}
+              </li> */}
 
-              <li className="nav-item dropdown">
-                <a
-                  className="nav-link text-white dropdown-toggle d-flex align-items-center"
-                  id="languages"
-                  href="/"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <img
-                    className="me-2"
-                    src="img/flags/16/GB.png"
-                    alt="English"
-                  />
-                  <span className="d-none d-sm-inline-block">English</span>
-                </a>
-                <ul
-                  className="dropdown-menu dropdown-menu-end mt-3 shadow-sm"
-                  aria-labelledby="languages"
-                >
-                  <li>
-                    <a className="dropdown-item" rel="nofollow" href="/">
-                      {" "}
-                      <img
-                        className="me-2"
-                        src="img/flags/16/DE.png"
-                        alt="English"
-                      />
-                      <span className="text-xs text-gray-700">German</span>
-                    </a>
-                  </li>
-                  <li>
-                    <a className="dropdown-item" rel="nofollow" href="/">
-                      {" "}
-                      <img
-                        className="me-2"
-                        src="img/flags/16/FR.png"
-                        alt="English"
-                      />
-                      <span className="text-xs text-gray-700">French </span>
-                    </a>
-                  </li>
-                </ul>
-              </li>
               {/* <!-- Logout    --> */}
-
               <li className="nav-item">
                 <a className="nav-link text-white" href="login.html">
-                  {" "}
-                  <span className="d-none d-sm-inline">Logout</span>
-                  <svg className="svg-icon svg-icon-xs svg-icon-light">
-                    {/* <use xlink:href="#security-1"> </use> */}
+                  <span className="d-none d-sm-inline">Logout </span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="svg-icon svg-icon-xs svg-icon-light"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"
+                    />
                   </svg>
                 </a>
               </li>

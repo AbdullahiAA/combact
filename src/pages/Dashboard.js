@@ -1,445 +1,210 @@
 import React from "react";
-import avatar1 from "../assets/img/avatar-1.jpg";
-import avatar2 from "../assets/img/avatar-2.jpg";
-import avatar3 from "../assets/img/avatar-3.jpg";
-import avatar4 from "../assets/img/avatar-4.jpg";
-import avatar5 from "../assets/img/avatar-5.jpg";
-import Header from "../components/global/Header";
+import Layout from "../components/Layout/Layout";
+// import avatar1 from "../assets/img/avatar-1.jpg";
+// import avatar2 from "../assets/img/avatar-2.jpg";
+// import avatar3 from "../assets/img/avatar-3.jpg";
+// import avatar4 from "../assets/img/avatar-4.jpg";
+// import avatar5 from "../assets/img/avatar-5.jpg";
 
 function Dashboard() {
   return (
-    <div className="page">
-      {/* <!-- Main Navbar--> */}
-
-      <Header />
-
-      <div className="page-content d-flex align-items-stretch">
-        {/* <!-- Side Navbar --> */}
-
-        <nav className="side-navbar z-index-40">
-          {/* <!-- Sidebar Header--> */}
-
-          <div className="sidebar-header d-flex align-items-center py-4 px-3">
-            <img
-              className="avatar shadow-0 img-fluid rounded-circle"
-              src={avatar1}
-              alt="..."
-            />
-            <div className="ms-3 title">
-              <h1 className="h4 mb-2">Mark Stephen</h1>
-              <p className="text-sm text-gray-500 fw-light mb-0 lh-1">
-                Web Designer
-              </p>
-            </div>
-          </div>
-          {/* <!-- Sidebar Navidation Menus--> */}
-          <span className="text-uppercase text-gray-400 text-xs letter-spacing-0 mx-3 px-2 heading">
-            Main
-          </span>
-          <ul className="list-unstyled py-4">
-            <li className="sidebar-item active">
-              <a className="sidebar-link" href="index.html">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="svg-icon svg-icon-sm svg-icon-light me-xl-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
-                  />
-                </svg>
-                Home
-              </a>
-            </li>
-            <li className="sidebar-item">
-              <a className="sidebar-link" href="tables.html">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="svg-icon svg-icon-sm svg-icon-light me-xl-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
-                  />
-                </svg>
-                Tables
-              </a>
-            </li>
-            <li className="sidebar-item">
-              <a className="sidebar-link" href="charts.html">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="svg-icon svg-icon-sm svg-icon-light me-xl-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M8 13v-1m4 1v-3m4 3V8M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"
-                  />
-                </svg>
-                Charts
-              </a>
-            </li>
-            <li className="sidebar-item">
-              <a className="sidebar-link" href="forms.html">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="svg-icon svg-icon-sm svg-icon-light me-xl-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
-                  />
-                </svg>
-                Forms
-              </a>
-            </li>
-            <li className="sidebar-item">
-              <a
-                className="sidebar-link"
-                href="#exampledropdownDropdown"
-                data-bs-toggle="collapse"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="svg-icon svg-icon-sm svg-icon-light me-xl-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"
-                  />
-                </svg>
-                Example dropdown
-              </a>
-              <ul
-                className="collapse list-unstyled "
-                id="exampledropdownDropdown"
-              >
-                <li>
-                  <a className="sidebar-link" href="/">
-                    Page
-                  </a>
-                </li>
-                <li>
-                  <a className="sidebar-link" href="/">
-                    Page
-                  </a>
-                </li>
-                <li>
-                  <a className="sidebar-link" href="/">
-                    Page
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li className="sidebar-item">
-              <a className="sidebar-link" href="login.html">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="svg-icon svg-icon-sm svg-icon-light me-xl-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M8 11V7a4 4 0 118 0m-4 8v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2z"
-                  />
-                </svg>
-                Login page
-              </a>
-            </li>
-          </ul>
-          <span className="text-uppercase text-gray-400 text-xs letter-spacing-0 mx-3 px-2 heading">
-            Extras
-          </span>
-          <ul className="list-unstyled py-4">
-            <li className="sidebar-item">
-              <a className="sidebar-link" href="/">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="svg-icon svg-icon-sm svg-icon-light me-xl-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"
-                  />
-                </svg>
-                Demo
-              </a>
-            </li>
-            <li className="sidebar-item">
-              <a className="sidebar-link" href="/">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="svg-icon svg-icon-sm svg-icon-light me-xl-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"
-                  />
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"
-                  />
-                </svg>
-                Demo
-              </a>
-            </li>
-            <li className="sidebar-item">
-              <a className="sidebar-link" href="/">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="svg-icon svg-icon-sm svg-icon-light me-xl-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
-                  />
-                </svg>
-                Demo
-              </a>
-            </li>
-            <li className="sidebar-item">
-              <a className="sidebar-link" href="/">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="svg-icon svg-icon-sm svg-icon-light me-xl-2"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                  />
-                </svg>
-                Demo
-              </a>
-            </li>
-          </ul>
-        </nav>
-        <div className="content-inner w-100">
-          {/* <!-- Page Header--> */}
-
-          <header className="bg-white shadow-sm px-4 py-3 z-index-20">
-            <div className="container-fluid px-0">
-              <h2 className="mb-0 p-1">Dashboard</h2>
-            </div>
-          </header>
-          {/* <!-- Dashboard Counts Section--> */}
-
-          <section className="pb-0">
-            <div className="container-fluid">
-              <div className="card mb-0">
-                <div className="card-body">
-                  <div className="row gx-5 bg-white">
-                    {/* <!-- Item --> */}
-
-                    <div className="col-xl-3 col-sm-6 py-4 border-lg-end border-gray-200">
-                      <div className="d-flex align-items-center">
-                        <div className="icon flex-shrink-0 bg-violet">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            className="svg-icon svg-icon-sm svg-icon-light"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
-                            />
-                          </svg>
-                        </div>
-                        <div className="mx-3">
-                          <h6 className="h4 fw-light text-gray-600 mb-3">
-                            New
-                            <br />
-                            Clients
-                          </h6>
-                          <div className="progress" style={{ height: "4px" }}>
-                            <div
-                              className="progress-bar bg-violet"
-                              role="progressbar"
-                              style={{ width: "25%", height: "4px" }}
-                              aria-valuenow="25"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                            ></div>
-                          </div>
-                        </div>
-                        <div className="number">
-                          <strong className="text-lg">25</strong>
-                        </div>
+    <Layout pageTitle={"Dashboard"}>
+      <section className="pb-0">
+        <div className="container-fluid">
+          <div className="card mb-0">
+            <div className="card-body">
+              <div className="row gx-5 bg-white">
+                <div className="col-xl-3 col-sm-6 py-4 border-lg-end border-gray-200">
+                  <div className="d-flex align-items-center">
+                    <div className="icon flex-shrink-0 bg-violet">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="svg-icon svg-icon-sm svg-icon-light"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                        />
+                      </svg>
+                    </div>
+                    <div className="mx-3">
+                      <h6 className="h4 fw-light text-gray-600 mb-3">
+                        Lessons
+                        <br />
+                        Completed
+                      </h6>
+                      <div className="progress" style={{ height: "4px" }}>
+                        <div
+                          className="progress-bar bg-violet"
+                          role="progressbar"
+                          style={{ width: "25%", height: "4px" }}
+                          aria-valuenow="25"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
                       </div>
                     </div>
-                    {/* <!-- Item --> */}
+                    <div className="number">
+                      <strong className="text-lg">25</strong>
+                    </div>
+                  </div>
+                </div>
 
-                    <div className="col-xl-3 col-sm-6 py-4 border-lg-end border-gray-200">
-                      <div className="d-flex align-items-center">
-                        <div className="icon flex-shrink-0 bg-red">
-                          <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            class="svg-icon svg-icon-sm svg-icon-light"
-                            fill="none"
-                            viewBox="0 0 24 24"
-                            stroke="currentColor"
-                            stroke-width="2"
-                          >
-                            <path
-                              stroke-linecap="round"
-                              stroke-linejoin="round"
-                              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
-                            />
-                          </svg>
-                        </div>
-                        <div className="mx-3">
-                          <h6 className="h4 fw-light text-gray-600 mb-3">
-                            Work
-                            <br />
-                            Orders
-                          </h6>
-                          <div className="progress" style={{ height: "4px" }}>
-                            <div
-                              className="progress-bar bg-red"
-                              role="progressbar"
-                              style={{ width: "70%", height: "4px" }}
-                              aria-valuenow="70"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                            ></div>
-                          </div>
-                        </div>
-                        <div className="number">
-                          <strong className="text-lg">70</strong>
-                        </div>
+                <div className="col-xl-3 col-sm-6 py-4 border-lg-end border-gray-200">
+                  <div className="d-flex align-items-center">
+                    <div className="icon flex-shrink-0 bg-red">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="svg-icon svg-icon-sm svg-icon-light"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        stroke-width="2"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
+                        />
+                      </svg>
+                    </div>
+                    <div className="mx-3">
+                      <h6 className="h4 fw-light text-gray-600 mb-3">
+                        Total
+                        <br />
+                        Lessons
+                      </h6>
+                      <div className="progress" style={{ height: "4px" }}>
+                        <div
+                          className="progress-bar bg-red"
+                          role="progressbar"
+                          style={{ width: "70%", height: "4px" }}
+                          aria-valuenow="70"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
                       </div>
                     </div>
-                    {/* <!-- Item --> */}
+                    <div className="number">
+                      <strong className="text-lg">70</strong>
+                    </div>
+                  </div>
+                </div>
 
-                    <div className="col-xl-3 col-sm-6 py-4 border-lg-end border-gray-200">
-                      <div className="d-flex align-items-center">
-                        <div className="icon flex-shrink-0 bg-green">
-                          <svg className="svg-icon svg-icon-sm svg-icon-light">
-                            {/* <use xlink:href="#numbers-1"> </use> */}
-                          </svg>
-                        </div>
-                        <div className="mx-3">
-                          <h6 className="h4 fw-light text-gray-600 mb-3">
-                            New
-                            <br />
-                            Invoices
-                          </h6>
-                          <div className="progress" style={{ height: "4px" }}>
-                            <div
-                              className="progress-bar bg-green"
-                              role="progressbar"
-                              style={{ width: "40%", height: "4px" }}
-                              aria-valuenow="40"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                            ></div>
-                          </div>
-                        </div>
-                        <div className="number">
-                          <strong className="text-lg">40</strong>
-                        </div>
+                <div className="col-xl-3 col-sm-6 py-4 border-lg-end border-gray-200">
+                  <div className="d-flex align-items-center">
+                    <div className="icon flex-shrink-0 bg-green">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="svg-icon svg-icon-sm svg-icon-light"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
+                        />
+                      </svg>
+                    </div>
+                    <div className="mx-3">
+                      <h6 className="h4 fw-light text-gray-600 mb-3">
+                        Attempted
+                        <br />
+                        Quizzes
+                      </h6>
+                      <div className="progress" style={{ height: "4px" }}>
+                        <div
+                          className="progress-bar bg-green"
+                          role="progressbar"
+                          style={{ width: "40%", height: "4px" }}
+                          aria-valuenow="40"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
                       </div>
                     </div>
-                    {/* <!-- Item --> */}
+                    <div className="number">
+                      <strong className="text-lg">40</strong>
+                    </div>
+                  </div>
+                </div>
 
-                    <div className="col-xl-3 col-sm-6 py-4">
-                      <div className="d-flex align-items-center">
-                        <div className="icon flex-shrink-0 bg-orange">
-                          <svg className="svg-icon svg-icon-sm svg-icon-light">
-                            {/* <use xlink:href="#list-details-1"> </use> */}
-                          </svg>
-                        </div>
-                        <div className="mx-3">
-                          <h6 className="h4 fw-light text-gray-600 mb-3">
-                            Open
-                            <br />
-                            Cases
-                          </h6>
-                          <div className="progress" style={{ height: "4px" }}>
-                            <div
-                              className="progress-bar bg-orange"
-                              role="progressbar"
-                              style={{ width: "50%", height: "4px" }}
-                              aria-valuenow="50"
-                              aria-valuemin="0"
-                              aria-valuemax="100"
-                            ></div>
-                          </div>
-                        </div>
-                        <div className="number">
-                          <strong className="text-lg">50</strong>
-                        </div>
+                <div className="col-xl-3 col-sm-6 py-4">
+                  <div className="d-flex align-items-center">
+                    <div className="icon flex-shrink-0 bg-orange">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="svg-icon svg-icon-sm svg-icon-light"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                        />
+                      </svg>
+                    </div>
+                    <div className="mx-3">
+                      <h6 className="h4 fw-light text-gray-600 mb-3">
+                        Total
+                        <br />
+                        Quizzes
+                      </h6>
+                      <div className="progress" style={{ height: "4px" }}>
+                        <div
+                          className="progress-bar bg-orange"
+                          role="progressbar"
+                          style={{ width: "50%", height: "4px" }}
+                          aria-valuenow="50"
+                          aria-valuemin="0"
+                          aria-valuemax="100"
+                        ></div>
                       </div>
+                    </div>
+                    <div className="number">
+                      <strong className="text-lg">50</strong>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
-          {/* <!-- Dashboard Header Section    --> */}
+          </div>
+        </div>
+      </section>
 
-          <section className="pb-0">
+      {/* <section className="pb-0">
             <div className="container-fluid">
               <div className="row align-items-stretch">
-                {/* <!-- Statistics --> */}
-
                 <div className="col-lg-3 col-12">
                   <div className="card mb-3">
                     <div className="card-body">
                       <div className="d-flex align-items-center">
                         <div className="icon flex-shrink-0 bg-red">
-                          <i className="fas fa-tasks"></i>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="fas fa-tasks"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth={1}
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4"
+                            />
+                          </svg>
                         </div>
                         <div className="ms-3">
                           <strong className="text-lg d-block lh-1 mb-1">
@@ -456,7 +221,20 @@ function Dashboard() {
                     <div className="card-body">
                       <div className="d-flex align-items-center">
                         <div className="icon flex-shrink-0 bg-green">
-                          <i className="far fa-calendar"></i>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            className="far fa-calendar"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth={1}
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                            />
+                          </svg>
                         </div>
                         <div className="ms-3">
                           <strong className="text-lg d-block lh-1 mb-1">
@@ -487,7 +265,6 @@ function Dashboard() {
                     </div>
                   </div>
                 </div>
-                {/* <!-- Line Chart            --> */}
 
                 <div className="col-lg-6 col-12">
                   <div className="card mb-0 h-100">
@@ -496,9 +273,8 @@ function Dashboard() {
                     </div>
                   </div>
                 </div>
-                <div className="col-lg-3 col-12">
-                  {/* <!-- Bar Chart   --> */}
 
+                <div className="col-lg-3 col-12">
                   <div className="card">
                     <div className="card-body">
                       <strong className="h2 mb-0 d-block text-violet">
@@ -510,8 +286,6 @@ function Dashboard() {
                       <canvas id="barChartHome"></canvas>
                     </div>
                   </div>
-                  {/* <!-- Numbers--> */}
-
                   <div className="card mb-0">
                     <div className="card-body">
                       <div className="d-flex align-items-center">
@@ -532,12 +306,10 @@ function Dashboard() {
                 </div>
               </div>
             </div>
-          </section>
-          {/* <!-- Projects Section--> */}
+          </section> */}
 
-          <section className="pb-0">
+      {/* <section className="pb-0">
             <div className="container-fluid">
-              {/* <!-- Project--> */}
 
               <div className="card mb-3">
                 <div className="card-body p-3">
@@ -591,7 +363,6 @@ function Dashboard() {
                   </div>
                 </div>
               </div>
-              {/* <!-- Project--> */}
 
               <div className="card mb-3">
                 <div className="card-body p-3">
@@ -645,7 +416,6 @@ function Dashboard() {
                   </div>
                 </div>
               </div>
-              {/* <!-- Project--> */}
 
               <div className="card mb-3">
                 <div className="card-body p-3">
@@ -699,7 +469,6 @@ function Dashboard() {
                   </div>
                 </div>
               </div>
-              {/* <!-- Project--> */}
 
               <div className="card mb-0">
                 <div className="card-body p-3">
@@ -754,13 +523,11 @@ function Dashboard() {
                 </div>
               </div>
             </div>
-          </section>
-          {/* <!-- Client Section--> */}
+          </section> */}
 
-          <section className="pb-0">
+      {/* <section className="pb-0">
             <div className="container-fluid">
               <div className="row gy-4">
-                {/* <!-- Work Amount  --> */}
 
                 <div className="col-lg-4">
                   <div className="card mb-0">
@@ -806,7 +573,6 @@ function Dashboard() {
                     </div>
                   </div>
                 </div>
-                {/* <!-- Client Profile --> */}
 
                 <div className="col-lg-4">
                   <div className="card mb-0">
@@ -910,7 +676,6 @@ function Dashboard() {
                     </div>
                   </div>
                 </div>
-                {/* <!-- Total Overdue             --> */}
 
                 <div className="col-lg-4">
                   <div className="card mb-0">
@@ -955,13 +720,12 @@ function Dashboard() {
                 </div>
               </div>
             </div>
-          </section>
-          {/* <!-- Feeds Section--> */}
+          </section> */}
 
+      {/* 
           <section className="pb-0">
             <div className="container-fluid">
               <div className="row gy-4">
-                {/* <!-- Trending Articles--> */}
 
                 <div className="col-lg-6">
                   <div className="card mb-0">
@@ -1097,7 +861,6 @@ function Dashboard() {
                     </div>
                   </div>
                 </div>
-                {/* <!-- Check List --> */}
 
                 <div className="col-lg-6">
                   <div className="card rounded-0 mb-0">
@@ -1244,14 +1007,11 @@ function Dashboard() {
                 </div>
               </div>
             </div>
-          </section>
-          {/* <!-- Updates Section                                                --> */}
+          </section> */}
 
-          <section>
+      {/* <section>
             <div className="container-fluid">
               <div className="row gy-4">
-                {/* <!-- Recent Updates--> */}
-
                 <div className="col-lg-4">
                   <div className="card mb-0">
                     <div className="card-header position-relative px-4">
@@ -1288,8 +1048,6 @@ function Dashboard() {
                       <h3 className="h4 mb-0">Recent Updates</h3>
                     </div>
                     <div className="card-body p-0">
-                      {/* <!-- Item--> */}
-
                       <div className="p-3 d-flex justify-content-between">
                         <div className="d-flex">
                           <i className="fas fa-rss text-gray-600"></i>
@@ -1312,7 +1070,6 @@ function Dashboard() {
                           </small>
                         </div>
                       </div>
-                      {/* <!-- Item--> */}
 
                       <div className="p-3 d-flex justify-content-between bg-light">
                         <div className="d-flex">
@@ -1336,7 +1093,6 @@ function Dashboard() {
                           </small>
                         </div>
                       </div>
-                      {/* <!-- Item--> */}
 
                       <div className="p-3 d-flex justify-content-between">
                         <div className="d-flex">
@@ -1360,7 +1116,6 @@ function Dashboard() {
                           </small>
                         </div>
                       </div>
-                      {/* <!-- Item--> */}
 
                       <div className="p-3 d-flex justify-content-between bg-light">
                         <div className="d-flex">
@@ -1384,7 +1139,6 @@ function Dashboard() {
                           </small>
                         </div>
                       </div>
-                      {/* <!-- Item--> */}
 
                       <div className="p-3 d-flex justify-content-between">
                         <div className="d-flex">
@@ -1411,7 +1165,6 @@ function Dashboard() {
                     </div>
                   </div>
                 </div>
-                {/* <!-- Daily Feeds --> */}
 
                 <div className="col-lg-4">
                   <div className="card mb-0">
@@ -1449,8 +1202,6 @@ function Dashboard() {
                       <h3 className="h4 mb-0">Daily Feeds</h3>
                     </div>
                     <div className="card-body p-0">
-                      {/* <!-- Item--> */}
-
                       <div className="p-3 border-bottom border-gray-200">
                         <div className="d-flex justify-content-between">
                           <div className="d-flex">
@@ -1477,7 +1228,6 @@ function Dashboard() {
                           </div>
                         </div>
                       </div>
-                      {/* <!-- Item--> */}
 
                       <div className="p-3 border-bottom border-gray-200">
                         <div className="d-flex justify-content-between">
@@ -1520,7 +1270,6 @@ function Dashboard() {
                           </div>
                         </div>
                       </div>
-                      {/* <!-- Item--> */}
 
                       <div className="p-3">
                         <div className="d-flex justify-content-between">
@@ -1569,7 +1318,6 @@ function Dashboard() {
                     </div>
                   </div>
                 </div>
-                {/* <!-- Recent Activities --> */}
 
                 <div className="col-lg-4">
                   <div className="card mb-0">
@@ -1702,36 +1450,8 @@ function Dashboard() {
                 </div>
               </div>
             </div>
-          </section>
-          {/* <!-- Page Footer--> */}
-
-          <footer
-            className="position-absolute bottom-0 bg-darkBlue text-white text-center py-3 w-100 text-xs"
-            id="footer"
-          >
-            <div className="container-fluid">
-              <div className="row gy-2">
-                <div className="col-sm-6 text-sm-start">
-                  <p className="mb-0">Your company &copy; 2017-2021</p>
-                </div>
-                <div className="col-sm-6 text-sm-end">
-                  <p className="mb-0">
-                    Design by
-                    <a
-                      href="https://bootstrapious.com/p/admin-template"
-                      className="text-white text-decoration-none"
-                    >
-                      Bootstrapious
-                    </a>
-                  </p>
-                  {/* <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)--> */}
-                </div>
-              </div>
-            </div>
-          </footer>
-        </div>
-      </div>
-    </div>
+          </section> */}
+    </Layout>
   );
 }
 
