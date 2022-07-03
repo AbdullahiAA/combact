@@ -1,7 +1,6 @@
 import React from "react";
 import avatar1 from "../../assets/img/avatar-1.jpg";
 import { NavLink } from "react-router-dom";
-import { GrCertificate } from "react-icons/gr";
 
 function Sidebar() {
   return (
@@ -101,7 +100,7 @@ function Sidebar() {
 
         <li className="sidebar-item">
           <NavLink className="sidebar-link" to="/certificate">
-            {/* <svg
+            <svg
               className="svg-icon svg-icon-sm svg-icon-light me-xl-2"
               fill="none"
               viewBox="0 0 24 24"
@@ -111,10 +110,9 @@ function Sidebar() {
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"
+                d="M15 19H2V1h16v4m0 0a5 5 0 110 10 5 5 0 010-10zm-3 9v8l3-2 3 2v-8M5 8h6m-6 3h5m-5 3h2M5 5h2"
               />
-            </svg> */}
-            <GrCertificate className="svg-icon svg-icon-sm svg-icon-light me-xl-2" />
+            </svg>
             Certificate
           </NavLink>
         </li>

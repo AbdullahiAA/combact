@@ -11,10 +11,12 @@ import Settings from "./pages/Settings/Settings";
 import About from "./pages/About/About";
 import LessonPage from "./pages/Lessons/LessonPage";
 import Certificate from "./pages/Certificate/Certificate";
+import ScrollToTop from "./components/global/ScrollToTop";
 
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <div className="app">
         <Routes>
           <Route path="/" element={<Navigate to="/login" />} />
