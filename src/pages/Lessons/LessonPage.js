@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
+import { useParams, Link } from "react-router-dom";
 import "./LessonPage.css";
 import Layout from "../../components/Layout/Layout";
-import { useParams } from "react-router-dom";
-
 import vid01 from "../../assets/videos/lesson01.mp4";
+import VideoFrame from "../../components/Lessons/VideoFrame";
 
 function LessonPage() {
   const { lessonID } = useParams();
@@ -91,15 +91,35 @@ function LessonPage() {
           </p>
         </div>
         <div className="card-body">
-          <div className="videoWrapper">
-            <iframe
-              src={vid01}
-              title={lesson?.title}
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
+          <VideoFrame src={vid01} title={lesson?.title} />
+        </div>
+      </div>
+
+      <div className="card">
+        <div className="card-header position-relative">
+          <p className="mb-0 d-flex align-items-center">
+            Let's have some fun with these questions!
+          </p>
+        </div>
+        <div className="card-body">
+          <VideoFrame src={vid01} title={lesson?.title} />
+        </div>
+      </div>
+
+      <div className="d-flex justify-content-end">
+        <div className="btn-group">
+          <Link
+            to={`/lessons/${lesson.id - 1}`}
+            className="btn btn-outline-primary btn-lg"
+          >
+            Previous
+          </Link>
+          <Link
+            to={`/lessons/${lesson.id + 1}`}
+            className="btn btn-outline-primary btn-lg"
+          >
+            Next
+          </Link>
         </div>
       </div>
     </Layout>

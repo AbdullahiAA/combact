@@ -1,6 +1,6 @@
 import React from "react";
-import Header from "../global/Header";
-import Sidebar from "../global/Sidebar";
+import Header from "./Header";
+import Sidebar from "./Sidebar";
 import { Link } from "react-router-dom";
 
 // @subTitle
