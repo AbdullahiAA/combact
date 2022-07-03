@@ -175,10 +175,7 @@ function LessonPage() {
               </div>
             </div>
             <div className="modal-footer">
-              <button
-                className="btn btn-outline-faintGreen btn-sm"
-                type="button"
-              >
+              <button className="btn btn-outline-success" type="button">
                 Submit
               </button>
             </div>
@@ -255,10 +252,7 @@ function LessonPage() {
               </div>
             </div>
             <div className="modal-footer">
-              <button
-                className="btn btn-outline-faintGreen btn-sm"
-                type="button"
-              >
+              <button className="btn btn-outline-success" type="button">
                 Submit
               </button>
             </div>
@@ -335,10 +329,7 @@ function LessonPage() {
               </div>
             </div>
             <div className="modal-footer">
-              <button
-                className="btn btn-outline-faintGreen btn-sm"
-                type="button"
-              >
+              <button className="btn btn-outline-success" type="button">
                 Submit
               </button>
             </div>
@@ -415,10 +406,7 @@ function LessonPage() {
               </div>
             </div>
             <div className="modal-footer">
-              <button
-                className="btn btn-outline-faintGreen btn-sm"
-                type="button"
-              >
+              <button className="btn btn-outline-success" type="button">
                 Submit
               </button>
             </div>
@@ -431,13 +419,13 @@ function LessonPage() {
         <div className="btn-group">
           <Link
             to={`/lessons/${lesson.id - 1}`}
-            className="btn btn-outline-primary btn-lg"
+            className="btn btn-outline-primary lessonNavBtn"
           >
             Previous
           </Link>
           <Link
             to={`/lessons/${lesson.id + 1}`}
-            className="btn btn-outline-primary btn-lg"
+            className="btn btn-outline-primary lessonNavBtn"
           >
             Next
           </Link>

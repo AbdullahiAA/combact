@@ -3320,8 +3320,8 @@ textarea.form-control.is-invalid {
 .btn-check:focus + .btn,
 .btn:focus {
   outline: 0;
-  /* -webkit-box-shadow: 0 0 0 0.25rem rgba(121, 106, 238, 0.25); */
-  /* box-shadow: 0 0 0 0.25rem rgba(121, 106, 238, 0.25); */
+  -webkit-box-shadow: 0 0 0 0.25rem rgba(121, 106, 238, 0.25);
+  box-shadow: 0 0 0 0.25rem rgba(121, 106, 238, 0.25);
 }
 
 .btn:disabled,
@@ -4083,9 +4083,12 @@ fieldset:disabled .btn {
   border-color: #85b4f2;
 }
 
-.btn-outline-primary {
+.btn-outline-primary,
+.btn-outline-primary.lessonNavBtn:focus {
   color: #796aee;
   border-color: #796aee;
+  background-color: transparent;
+  box-shadow: none;
 }
 
 .btn-outline-primary:hover {
