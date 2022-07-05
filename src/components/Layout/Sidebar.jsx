@@ -23,8 +23,8 @@ function Sidebar() {
             clipRule="evenodd"
           />
         </svg>
-        <div className="ms-3 title">
-          <h1 className="h4 mb-2">Jelili Abdullahi A.</h1>
+        <div className="ms-2 title">
+          <h1 className="h5 mb-2">Jelili Abdullahi A.</h1>
           <p className="text-sm text-gray-500 fw-light mb-0 lh-1">@techpro</p>
         </div>
       </div>

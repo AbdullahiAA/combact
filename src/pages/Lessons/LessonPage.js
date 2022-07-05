@@ -56,7 +56,7 @@ function LessonPage() {
           </h3>
         </div>
         <div className="card-body">
-          <VideoFrame src={vid01} title={lesson?.title} />
+          <VideoFrame src={"https://www.youtube.com/embed/UukVP7Mg3TU"} />
         </div>
       </div>
 
