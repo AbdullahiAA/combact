@@ -84,7 +84,7 @@ function Dashboard() {
                       <div
                         className="progress-bar bg-red"
                         role="progressbar"
-                        style={{ width: "70%", height: "4px" }}
+                        style={{ width: "100%", height: "4px" }}
                         aria-valuenow="70"
                         aria-valuemin="0"
                         aria-valuemax="100"
@@ -170,7 +170,7 @@ function Dashboard() {
                       <div
                         className="progress-bar bg-orange"
                         role="progressbar"
-                        style={{ width: "50%", height: "4px" }}
+                        style={{ width: "100%", height: "4px" }}
                         aria-valuenow="50"
                         aria-valuemin="0"
                         aria-valuemax="100"

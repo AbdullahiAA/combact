@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../../components/Layout/Layout";
-import avatar2 from "../../assets/img/avatar-2.jpg";
+// import avatar2 from "../../assets/img/avatar-2.jpg";
 
 function Profile() {
   return (
@@ -33,51 +33,48 @@ function Profile() {
           </div>
           <div className="card-body text-center">
             <div className="client-avatar mb-3">
-              <img
+              {/* <img
                 className="img-fluid rounded-circle shadow-0"
                 src={avatar2}
                 alt="..."
-              />
+              /> */}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="shadow-0 img-fluid rounded-circle"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+                  clipRule="evenodd"
+                />
+              </svg>
               <div className="status bg-green"></div>
             </div>
-            <h3 className="fw-normal">Jason Doe</h3>
-            <p className="text-sm text-gray-500 mb-1">Web Developer</p>
+            <h3 className="fw-normal">Jelili Abdullahi A.</h3>
+            <p className="text-sm text-gray-500 mb-1">
+              The Noble Standard Schools
+            </p>
             <a
               className="btn btn-faintGreen btn-sm text-white px-4 rounded-pill py-0"
               href="/"
             >
-              Follow
+              @techpro
             </a>
             <div className="row py-4 gy-3">
               <div className="col-4">
                 <strong className="d-block lh-1">20</strong>
-                <small>Photos</small>
+                <small>Lessons</small>
               </div>
               <div className="col-4">
-                <strong className="d-block lh-1">54</strong>
-                <small>Videos</small>
+                <strong className="d-block lh-1">12</strong>
+                <small>Quizzes</small>
               </div>
               <div className="col-4">
-                <strong className="d-block lh-1">235</strong>
-                <small>Tasks</small>
+                <strong className="d-block lh-1">3</strong>
+                <small>Rank</small>
               </div>
-            </div>
-            <div className="d-flex justify-content-between">
-              <a className="text-gray-500 text-sm" href="/" target="_blank">
-                <i className="fab fa-facebook-f"></i>
-              </a>
-              <a className="text-gray-500 text-sm" href="/" target="_blank">
-                <i className="fab fa-twitter"></i>
-              </a>
-              <a className="text-gray-500 text-sm" href="/" target="_blank">
-                <i className="fab fa-google"></i>
-              </a>
-              <a className="text-gray-500 text-sm" href="/" target="_blank">
-                <i className="fab fa-instagram"></i>
-              </a>
-              <a className="text-gray-500 text-sm" href="/" target="_blank">
-                <i className="fab fa-linkedin-in"></i>
-              </a>
             </div>
           </div>
         </div>

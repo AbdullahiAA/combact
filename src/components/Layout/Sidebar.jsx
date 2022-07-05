@@ -1,26 +1,36 @@
 import React from "react";
-import avatar1 from "../../assets/img/avatar-1.jpg";
+// import avatar1 from "../../assets/img/avatar-1.jpg";
 import { NavLink } from "react-router-dom";
 
 function Sidebar() {
   return (
     <nav className="side-navbar z-index-40">
       <div className="sidebar-header d-flex align-items-center py-4 px-3">
-        <img
+        {/* <img
           className="avatar shadow-0 img-fluid rounded-circle"
           src={avatar1}
           alt="Mark Stephen"
-        />
+        /> */}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          className="avatar shadow-0 img-fluid rounded-circle"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fillRule="evenodd"
+            d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-6-3a2 2 0 11-4 0 2 2 0 014 0zm-2 4a5 5 0 00-4.546 2.916A5.986 5.986 0 0010 16a5.986 5.986 0 004.546-2.084A5 5 0 0010 11z"
+            clipRule="evenodd"
+          />
+        </svg>
         <div className="ms-3 title">
-          <h1 className="h4 mb-2">Mark Stephen</h1>
-          <p className="text-sm text-gray-500 fw-light mb-0 lh-1">@mark87</p>
+          <h1 className="h4 mb-2">Jelili Abdullahi A.</h1>
+          <p className="text-sm text-gray-500 fw-light mb-0 lh-1">@techpro</p>
         </div>
       </div>
-
       <span className="text-uppercase text-gray-400 text-xs letter-spacing-0 mx-3 px-2 heading">
-        Rank goes here
+        Rank #3
       </span>
-
       <ul className="list-unstyled py-4">
         <li className="sidebar-item">
           <NavLink className="sidebar-link" to="/dashboard">
@@ -116,7 +126,9 @@ function Sidebar() {
             Certificate
           </NavLink>
         </li>
-
+      </ul>
+      <ul className="list-unstyled py-4">
+        <hr />
         <li className="sidebar-item">
           <NavLink className="sidebar-link" to="/profile">
             <svg

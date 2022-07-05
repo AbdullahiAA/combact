@@ -4,54 +4,25 @@ import "./LessonPage.css";
 import Layout from "../../components/Layout/Layout";
 import vid01 from "../../assets/videos/lesson01.mp4";
 import VideoFrame from "../../components/Lessons/VideoFrame";
+import { useLessons } from "../../context/LessonsContext";
 
 function LessonPage() {
   const { lessonID } = useParams();
-  const [lesson, setLesson] = useState({});
+  const { getLesson } = useLessons();
 
-  const [lessons] = useState([
-    {
-      id: 1,
-      title: "Introduction to Calculus",
-      descr: "Lorem Ipsum Dolor",
-      duration: "20 mins",
-      status: "completed",
-    },
-    {
-      id: 2,
-      title: "Branches of Calculus",
-      descr: "Lorem Ipsum Dolor",
-      duration: "20 mins",
-      status: "pending",
-    },
-    {
-      id: 3,
-      title: "Differential Calculus",
-      descr: "Lorem Ipsum Dolor",
-      duration: "20 mins",
-      status: "completed",
-    },
-    {
-      id: 4,
-      title: "Integral Calculus",
-      descr: "Lorem Ipsum Dolor",
-      duration: "20 mins",
-      status: "not started",
-    },
-    {
-      id: 5,
-      title: "Limits & Continuity",
-      descr: "Lorem Ipsum Dolor",
-      duration: "20 mins",
-      status: "pending",
-    },
-  ]);
+  const [lesson, setLesson] = useState();
 
-  useEffect(() => {
-    setLesson(() => lessons.find((lesson) => lesson.id === parseInt(lessonID)));
-  }, [lessonID, lessons]);
+  useEffect(() => setLesson(() => getLesson(lessonID)), [getLesson, lessonID]);
 
-  if (!lesson) return "Invalid lesson";
+  if (!lesson)
+    return (
+      <div className="d-flex justify-content-center align-items-center vh-100">
+        <h1>
+          Lesson not found.{" "}
+          <Link to={"/lessons"}>Please go back to the lessons page</Link>
+        </h1>
+      </div>
+    );
 
   return (
     <Layout
@@ -70,15 +41,9 @@ function LessonPage() {
             At the end of this lesson, you would have been exposed to:
           </h5>
           <ol>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum, dolor sit amet consectetur adipisicing.</li>
-            <li>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla.
-            </li>
-            <li>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
-              id tempore nobis!
-            </li>
+            {lesson?.objectives.map((objective, key) => (
+              <li key={key}>{objective}</li>
+            ))}
           </ol>
         </div>
       </div>

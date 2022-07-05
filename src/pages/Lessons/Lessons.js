@@ -1,49 +1,10 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
+import { useLessons } from "../../context/LessonsContext";
 
 function Lessons() {
-  const [lessons, setLessons] = useState([]);
-
-  useEffect(() => {
-    setLessons([
-      {
-        id: 1,
-        title: "Introduction to Calculus",
-        descr: "Lorem Ipsum Dolor",
-        duration: "20 mins",
-        status: "completed",
-      },
-      {
-        id: 2,
-        title: "Branches of Calculus",
-        descr: "Lorem Ipsum Dolor",
-        duration: "20 mins",
-        status: "pending",
-      },
-      {
-        id: 3,
-        title: "Differential Calculus",
-        descr: "Lorem Ipsum Dolor",
-        duration: "20 mins",
-        status: "completed",
-      },
-      {
-        id: 4,
-        title: "Integral Calculus",
-        descr: "Lorem Ipsum Dolor",
-        duration: "20 mins",
-        status: "not started",
-      },
-      {
-        id: 5,
-        title: "Limits & Continuity",
-        descr: "Lorem Ipsum Dolor",
-        duration: "20 mins",
-        status: "pending",
-      },
-    ]);
-  }, []);
+  const { lessons } = useLessons();
 
   return (
     <Layout pageTitle="Lessons">
@@ -52,7 +13,6 @@ function Lessons() {
           <div className="d-flex align-items-center justify-content-between gx-lg-5 gy-3">
             <div className="d-flex align-items-center">
               <svg
-                xmlns="http://www.w3.org/2000/svg"
                 className={`svg-icon svg-icon-sm svg-icon-light me-2 flex-shrink-0 ${
                   lesson.status === "completed"
                     ? "text-success"
@@ -78,7 +38,6 @@ function Lessons() {
               </svg>
               <div className="ms-3">
                 <h3 className="h5 fw-normal text-dark mb-0">{lesson.title}</h3>
-                <small className="text-gray-500">{lesson.descr}</small>
               </div>
             </div>
             <div className="text-sm text-gray-600 d-flex align-items-center flex-shrink-0">

@@ -13185,10 +13185,6 @@ nav.side-navbar.shrinked .sidebar-header .title {
   display: none;
 }
 
-.sidebar-item {
-  /* submenu item active */
-}
-
 .sidebar-item li a {
   padding-left: 50px;
   background: #eef5f9;
@@ -13379,8 +13375,6 @@ nav.side-navbar.shrinked .sidebar-header .title {
 */
 nav.navbar {
   background: #2f333e;
-  /*==== Navbar Items ====*/
-  /*==== Search Box ====*/
 }
 
 nav.navbar .badge {
@@ -13538,9 +13532,6 @@ nav.navbar .search-box form input {
 
 /* MAIN NAVBAR MEDIAQUERIES ----------------------------------- */
 @media (max-width: 991.98px) {
-  nav.navbar {
-    /*==== Toggle Sidebar Btn ====*/
-  }
   nav.navbar .menu-btn {
     margin-right: 20px;
     -webkit-transition: all 0.7s;
