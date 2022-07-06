@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import "./LessonPage.css";
 import Layout from "../../components/Layout/Layout";
-import vid01 from "../../assets/videos/lesson01.mp4";
+// import vid01 from "../../assets/videos/lesson01.mp4";
 import VideoFrame from "../../components/Lessons/VideoFrame";
 import { useLessons } from "../../context/LessonsContext";
 
