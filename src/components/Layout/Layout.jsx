@@ -32,7 +32,7 @@ function Layout({ pageTitle, subTitle = null, children }) {
                   <ol className="breadcrumb mb-0 py-3">
                     <li className="breadcrumb-item">
                       <Link
-                        className="fw-light"
+                        className="fw-light text-palatinateBlue"
                         to={subTitle?.previous?.reference}
                       >
                         {subTitle?.previous?.title}

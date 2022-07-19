@@ -1,5 +1,8 @@
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
 import Layout from "../../components/Layout/Layout";
+import { useLessons } from "../../context/LessonsContext";
 // import avatar1 from "../assets/img/avatar-1.jpg";
 // import avatar2 from "../assets/img/avatar-2.jpg";
 // import avatar3 from "../assets/img/avatar-3.jpg";
@@ -7,6 +10,10 @@ import Layout from "../../components/Layout/Layout";
 // import avatar5 from "../assets/img/avatar-5.jpg";
 
 function Dashboard() {
+  const { lessons } = useLessons();
+  const [lessonsCount, setLessonsCount] = useState(0);
+
+  useEffect(() => setLessonsCount(lessons.length), [lessons]);
   return (
     <Layout pageTitle={"Dashboard"}>
       <div className="card py-0 mb-0">
@@ -84,8 +91,11 @@ function Dashboard() {
                       <div
                         className="progress-bar bg-red"
                         role="progressbar"
-                        style={{ width: "100%", height: "4px" }}
-                        aria-valuenow="70"
+                        style={{
+                          width: `${lessonsCount && "100%"}`,
+                          height: "4px",
+                        }}
+                        aria-valuenow={lessonsCount}
                         aria-valuemin="0"
                         aria-valuemax="100"
                       ></div>
@@ -93,7 +103,7 @@ function Dashboard() {
                   </div>
                 </div>
                 <div className="number">
-                  <strong className="text-lg">70</strong>
+                  <strong className="text-lg">{lessonsCount}</strong>
                 </div>
               </div>
             </div>

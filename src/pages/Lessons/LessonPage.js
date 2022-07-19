@@ -31,10 +31,23 @@ function LessonPage() {
         current: lesson?.title,
       }}
     >
+      {/* Lesson title */}
+      <div className="card p-3">
+        <div className="d-flex align-items-center justify-content-between gx-lg-5 gy-3">
+          <div className="d-flex align-items-center">
+            <h2 className="fw-bold  text-palatinateBlue mb-0">
+              Topic: <span className="fw-normal text-dark">{lesson.title}</span>
+            </h2>
+          </div>
+        </div>
+      </div>
+
       {/* Learning objectives */}
       <div className="card">
         <div className="card-header">
-          <h3 className="mb-0 text-paleBlue">Learning Objectives</h3>
+          <h3 className="mb-0 text-palatinateBlue fw-normal">
+            Learning Objectives
+          </h3>
         </div>
         <div className="card-body">
           <h5 className="fw-normal">
@@ -51,19 +64,19 @@ function LessonPage() {
       {/* Instructional Video */}
       <div className="card">
         <div className="card-header">
-          <h3 className="mb-0 text-paleBlue fw-normal">
+          <h3 className="mb-0 text-palatinateBlue fw-normal">
             Enjoy this lesson buddy!
           </h3>
         </div>
         <div className="card-body">
-          <VideoFrame src={"https://www.youtube.com/embed/UukVP7Mg3TU"} />
+          <VideoFrame src={lesson?.video?.url} />
         </div>
       </div>
 
       {/* A Short Quiz */}
       <div className="card">
         <div className="card-header">
-          <h3 className="mb-0 text-paleBlue fw-normal">
+          <h3 className="mb-0 text-palatinateBlue fw-normal">
             Let's have some fun with these questions!
           </h3>
         </div>

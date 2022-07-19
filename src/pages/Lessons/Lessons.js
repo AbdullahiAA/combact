@@ -18,7 +18,7 @@ function Lessons() {
                     ? "text-success"
                     : lesson.status === "pending"
                     ? "text-orange"
-                    : "text-paleBlue"
+                    : "text-palatinateBlue"
                 }`}
                 fill="none"
                 viewBox="0 0 24 24"
@@ -37,7 +37,9 @@ function Lessons() {
                 />
               </svg>
               <div className="ms-3">
-                <h3 className="h5 fw-normal text-dark mb-0">{lesson.title}</h3>
+                <h3 className="h5 fw-normal text-dark mb-0">
+                  {key + 1}. {lesson.title}
+                </h3>
               </div>
             </div>
             <div className="text-sm text-gray-600 d-flex align-items-center flex-shrink-0">
@@ -57,7 +59,7 @@ function Lessons() {
                   d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
                 />
               </svg>
-              <small>{lesson.duration}</small>
+              <small>{lesson?.video?.time}</small>
             </div>
           </div>
         </Link>
