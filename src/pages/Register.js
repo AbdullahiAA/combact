@@ -3,14 +3,72 @@ import FormCheckboxLabel from "../components/global/FormCheckboxLabel";
 import FormInput from "../components/global/FormInput";
 import FormLabel from "../components/global/FormLabel";
 import { useNavigate, Link } from "react-router-dom";
+import { useState } from "react";
+import axios from "../components/axios/axios";
+import { toast } from "react-hot-toast";
+import { useUserContext } from "../context/UserContext";
 
 function Register() {
   const navigate = useNavigate();
+  const { updateUserData, saveToken } = useUserContext();
+
+  const [name, setName] = useState("");
+  const [username, setUsername] = useState("");
+  const [email, setEmail] = useState("");
+  const [gender, setGender] = useState("");
+  const [password, setPassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [schName, setSchName] = useState("");
+  const [level, setLevel] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
 
-    navigate("/dashboard");
+    if (
+      !name ||
+      !username ||
+      !email ||
+      !gender ||
+      !password ||
+      !confirmPassword ||
+      !schName ||
+      !level
+    ) {
+      toast.error("All fields are required");
+    } else if (password !== confirmPassword) {
+      toast.error("Password does not match");
+    } else if (password.length < 4) {
+      toast.error("Password must be at least 4 characters long");
+    } else {
+      axios
+        .post("/register", {
+          name,
+          username,
+          email,
+          gender,
+          password,
+          level,
+          confirm_password: confirmPassword,
+          school_name: schName,
+        })
+        .then((res) => {
+          if (res?.data?.status) {
+            // Save data to context
+            toast.success(res?.data?.message);
+
+            saveToken(res?.data?.token);
+
+            updateUserData(res?.data);
+
+            navigate("/dashboard");
+          } else {
+            toast.error(res?.data?.message);
+          }
+        })
+        .catch((err) => {
+          toast.error(err?.message);
+        });
+    }
   }
 
   return (
@@ -45,28 +103,26 @@ function Register() {
                     <div className="input-material-group mb-3">
                       <FormInput
                         type="text"
-                        name="registerName"
-                        data-validate-field="registerName"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
                       />
-                      <FormLabel htmlFor="register-name">Name</FormLabel>
+                      <FormLabel>Name</FormLabel>
                     </div>
 
                     <div className="input-material-group mb-3">
                       <FormInput
                         type="text"
-                        name="registerUsername"
-                        data-validate-field="registerUsername"
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
                       />
-                      <FormLabel htmlFor="register-username">
-                        Username
-                      </FormLabel>
+                      <FormLabel>Username</FormLabel>
                     </div>
 
                     <div className="input-material-group mb-3">
                       <FormInput
                         type="email"
-                        name="registerEmail"
-                        data-validate-field="registerEmail"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                       />
                       <FormLabel>Email Address</FormLabel>
                     </div>
@@ -83,6 +139,9 @@ function Register() {
                               id="male"
                               type="radio"
                               name="gender"
+                              value="Male"
+                              onChange={(e) => setGender(e.target.value)}
+                              selected={gender === "Male"}
                             />
                             <FormCheckboxLabel htmlFor="male">
                               Male
@@ -93,6 +152,9 @@ function Register() {
                               id="female"
                               type="radio"
                               name="gender"
+                              value="Female"
+                              onChange={(e) => setGender(e.target.value)}
+                              selected={gender === "Feale"}
                             />
                             <FormCheckboxLabel htmlFor="female">
                               Female
@@ -106,8 +168,8 @@ function Register() {
                       <div className="input-material-group mb-3 col-md-6">
                         <FormInput
                           type="password"
-                          name="registerPassword"
-                          data-validate-field="registerPassword"
+                          value={password}
+                          onChange={(e) => setPassword(e.target.value)}
                         />
                         <FormLabel>Password</FormLabel>
                       </div>
@@ -115,8 +177,8 @@ function Register() {
                       <div className="input-material-group mb-3 col-md-6">
                         <FormInput
                           type="password"
-                          name="cPassword"
-                          data-validate-field="cPassword"
+                          value={confirmPassword}
+                          onChange={(e) => setConfirmPassword(e.target.value)}
                         />
                         <FormLabel>Confirm Password</FormLabel>
                       </div>
@@ -125,10 +187,10 @@ function Register() {
                     <div className="input-material-group mb-3">
                       <FormInput
                         type="text"
-                        name="schName"
-                        data-validate-field="schName"
+                        value={schName}
+                        onChange={(e) => setSchName(e.target.value)}
                       />
-                      <FormLabel htmlFor="sch-name">School Name</FormLabel>
+                      <FormLabel>School Name</FormLabel>
                     </div>
 
                     <div className="d-flex input-material-group mb-4 border-bottom border-gray-400">
@@ -137,37 +199,43 @@ function Register() {
                       <div className="col-9">
                         <div className="row">
                           <div className="form-check col-4">
-                            <FormCheckbox id="sss1" type="radio" name="class" />
+                            <FormCheckbox
+                              id="sss1"
+                              type="radio"
+                              name="level"
+                              value="SSS 1"
+                              onChange={(e) => setLevel(e.target.value)}
+                            />
                             <FormCheckboxLabel htmlFor="sss1">
                               SSS 1
                             </FormCheckboxLabel>
                           </div>
                           <div className="form-check col-4">
-                            <FormCheckbox id="sss2" type="radio" name="class" />
+                            <FormCheckbox
+                              id="sss2"
+                              type="radio"
+                              name="level"
+                              value="SSS 2"
+                              onChange={(e) => setLevel(e.target.value)}
+                            />
                             <FormCheckboxLabel htmlFor="sss2">
                               SSS 2
                             </FormCheckboxLabel>
                           </div>
                           <div className="form-check col-4">
-                            <FormCheckbox id="sss3" type="radio" name="class" />
+                            <FormCheckbox
+                              id="sss3"
+                              type="radio"
+                              name="level"
+                              value="SSS 3"
+                              onChange={(e) => setLevel(e.target.value)}
+                            />
                             <FormCheckboxLabel htmlFor="sss3">
                               SSS 3
                             </FormCheckboxLabel>
                           </div>
                         </div>
                       </div>
-                    </div>
-
-                    <div className="form-check mb-4">
-                      <FormCheckbox
-                        id="register-agree"
-                        name="registerAgree"
-                        value="1"
-                        data-validate-field="registerAgree"
-                      />
-                      <FormCheckboxLabel htmlFor="register-agree">
-                        I agree with the terms and policy
-                      </FormCheckboxLabel>
                     </div>
 
                     <button
@@ -180,10 +248,8 @@ function Register() {
 
                     <br />
 
-                    <small className="text-gray-500">
-                      Want to continue with your learning?{" "}
-                    </small>
-                    <Link className="text-sm text-paleBlue" to="/login">
+                    <small>Want to continue your fun with COMBACT? </small>
+                    <Link className="text-sm text-palatinateBlue" to="/login">
                       Login here
                     </Link>
                   </form>

@@ -2,14 +2,45 @@ import FormInput from "../components/global/FormInput";
 import FormLabel from "../components/global/FormLabel";
 
 import { useNavigate, Link } from "react-router-dom";
+import { useState } from "react";
+import axios from "../components/axios/axios";
+import { toast } from "react-hot-toast";
+import { useUserContext } from "../context/UserContext";
 
 function Login() {
   const navigate = useNavigate();
+  const { updateUserData, saveToken } = useUserContext();
+
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
 
   function handleSubmit(e) {
     e.preventDefault();
 
-    navigate("/dashboard");
+    if (!username || !password) {
+      toast.error("All fields are required.");
+    } else {
+      axios
+        .post("/login", { username, password })
+        .then((res) => {
+          if (res?.data?.status) {
+            toast.success(res?.data?.message);
+
+            saveToken(res?.data?.token);
+
+            updateUserData(res?.data);
+
+            navigate("/dashboard");
+          } else {
+            setPassword("");
+            toast.error(res?.data?.message);
+          }
+        })
+        .catch((err) => {
+          setPassword("");
+          toast.error(err?.message);
+        });
+    }
   }
   return (
     <div className="login-page">
@@ -17,7 +48,6 @@ function Login() {
         <div className="card shadow-sm w-100 rounded overflow-hidden bg-none">
           <div className="card-body p-0">
             <div className="row gx-0 align-items-stretch">
-              {/* Logo & Information Panel */}
               <div className="col-lg-6">
                 <div className="info d-flex justify-content-center flex-column p-4 h-100">
                   <div className="py-5">
@@ -29,7 +59,6 @@ function Login() {
                 </div>
               </div>
 
-              {/* Form Panel */}
               <div className="col-lg-6 bg-white">
                 <div className="d-flex align-items-center px-4 px-lg-5 h-100">
                   <form
@@ -42,8 +71,8 @@ function Login() {
                       <FormInput
                         id="login-username"
                         type="text"
-                        name="loginUsername"
-                        data-validate-field="loginUsername"
+                        value={username}
+                        onChange={(e) => setUsername(e.target.value)}
                       />
                       <FormLabel htmlFor="login-username">Username</FormLabel>
                     </div>
@@ -52,8 +81,8 @@ function Login() {
                       <FormInput
                         id="login-password"
                         type="password"
-                        name="loginPassword"
-                        data-validate-field="loginPassword"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
                       />
                       <FormLabel htmlFor="login-password">Password</FormLabel>
                     </div>

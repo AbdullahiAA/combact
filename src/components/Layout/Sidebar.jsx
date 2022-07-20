@@ -1,8 +1,11 @@
 import React from "react";
 // import avatar1 from "../../assets/img/avatar-1.jpg";
 import { NavLink } from "react-router-dom";
+import { useUserContext } from "../../context/UserContext";
 
 function Sidebar() {
+  const { userData } = useUserContext();
+
   return (
     <nav className="side-navbar z-index-40">
       <div className="sidebar-header d-flex align-items-center py-4 px-3">
@@ -24,12 +27,14 @@ function Sidebar() {
           />
         </svg>
         <div className="ms-2 title">
-          <h1 className="h5 mb-2">Jelili Abdullahi A.</h1>
-          <p className="text-sm text-gray-500 fw-light mb-0 lh-1">@techpro</p>
+          <h1 className="h5 mb-2">{userData?.student?.name}</h1>
+          <p className="text-sm text-gray-500 fw-light mb-0 lh-1">
+            @{userData?.student?.username}
+          </p>
         </div>
       </div>
       <span className="text-uppercase text-gray-400 text-xs letter-spacing-0 mx-3 px-2 heading">
-        Rank #3
+        Rank #{userData?.student?.rank}
       </span>
       <ul className="list-unstyled py-4">
         <li className="sidebar-item">

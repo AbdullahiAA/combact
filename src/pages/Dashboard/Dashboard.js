@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Layout from "../../components/Layout/Layout";
 import { useLessons } from "../../context/LessonsContext";
+// import { useUserContext } from "../../context/UserContext";
 // import avatar1 from "../assets/img/avatar-1.jpg";
 // import avatar2 from "../assets/img/avatar-2.jpg";
 // import avatar3 from "../assets/img/avatar-3.jpg";
@@ -10,6 +11,8 @@ import { useLessons } from "../../context/LessonsContext";
 // import avatar5 from "../assets/img/avatar-5.jpg";
 
 function Dashboard() {
+  // const {  } = useUserContext();
+
   const { lessons } = useLessons();
   const [lessonsCount, setLessonsCount] = useState(0);
 

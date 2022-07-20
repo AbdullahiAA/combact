@@ -1,8 +1,11 @@
 import React from "react";
 import Layout from "../../components/Layout/Layout";
+import { useUserContext } from "../../context/UserContext";
 // import avatar2 from "../../assets/img/avatar-2.jpg";
 
 function Profile() {
+  const { userData } = useUserContext();
+
   return (
     <Layout pageTitle={"Profile"}>
       <div className="col-lg-4">
@@ -50,29 +53,31 @@ function Profile() {
                   clipRule="evenodd"
                 />
               </svg>
-              <div className="status bg-green"></div>
             </div>
-            <h3 className="fw-normal">Jelili Abdullahi A.</h3>
+            <h3 className="fw-normal">{userData?.student?.name}</h3>
             <p className="text-sm text-gray-500 mb-1">
-              The Noble Standard Schools
+              {userData?.student?.school_name}
             </p>
-            <a
-              className="btn btn-faintGreen btn-sm text-white px-4 rounded-pill py-0"
-              href="/"
-            >
-              @techpro
-            </a>
+            <p className="btn btn-faintGreen btn-sm text-white px-4 rounded-pill py-0">
+              {userData?.student?.email}
+            </p>
             <div className="row py-4 gy-3">
               <div className="col-4">
-                <strong className="d-block lh-1">20</strong>
+                <strong className="d-block lh-1">
+                  {userData?.student?.completed_lessons.length}
+                </strong>
                 <small>Lessons</small>
               </div>
               <div className="col-4">
-                <strong className="d-block lh-1">12</strong>
+                <strong className="d-block lh-1">
+                  {userData?.student?.attempted_quizzes.length}
+                </strong>
                 <small>Quizzes</small>
               </div>
               <div className="col-4">
-                <strong className="d-block lh-1">3</strong>
+                <strong className="d-block lh-1">
+                  {userData?.student?.rank}
+                </strong>
                 <small>Rank</small>
               </div>
             </div>

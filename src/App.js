@@ -14,30 +14,59 @@ import Certificate from "./pages/Certificate/Certificate";
 import ScrollToTop from "./components/global/ScrollToTop";
 import QuizPage from "./pages/Quizzes/QuizPage";
 import { LessonsProvider } from "./context/LessonsContext";
+import { Toaster } from "react-hot-toast";
+import { UserContextProvider } from "./context/UserContext";
 
 function App() {
   return (
     <BrowserRouter>
-      <LessonsProvider>
-        <ScrollToTop />
-        <div className="app">
-          <Routes>
-            <Route path="/" element={<Navigate to="/login" />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/register" element={<Register />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/lessons" element={<Lessons />} />
-            <Route path="/lessons/:lessonID" element={<LessonPage />} />
-            <Route path="/other-resources" element={<OtherResources />} />
-            <Route path="/quizzes" element={<Quizzes />} />
-            <Route path="/quizzes/:lessonID" element={<QuizPage />} />
-            <Route path="/certificate" element={<Certificate />} />
-            <Route path="/profile" element={<Profile />} />
-            <Route path="/settings" element={<Settings />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
-        </div>
-      </LessonsProvider>
+      <UserContextProvider>
+        <LessonsProvider>
+          <ScrollToTop />
+          <Toaster
+            toastOptions={{
+              success: {
+                position: "top-right",
+                style: {
+                  background: "#28a745",
+                  color: "#fff",
+                },
+                iconTheme: {
+                  primary: "#fff",
+                  secondary: "#28a745",
+                },
+              },
+              error: {
+                style: {
+                  background: "#ff7676",
+                  color: "#fff",
+                },
+                iconTheme: {
+                  primary: "#fff",
+                  secondary: "#ff7676",
+                },
+              },
+            }}
+          />
+          <div className="app">
+            <Routes>
+              <Route path="/" element={<Navigate to="/login" />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/register" element={<Register />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/lessons" element={<Lessons />} />
+              <Route path="/lessons/:lessonID" element={<LessonPage />} />
+              <Route path="/other-resources" element={<OtherResources />} />
+              <Route path="/quizzes" element={<Quizzes />} />
+              <Route path="/quizzes/:lessonID" element={<QuizPage />} />
+              <Route path="/certificate" element={<Certificate />} />
+              <Route path="/profile" element={<Profile />} />
+              <Route path="/settings" element={<Settings />} />
+              <Route path="/about" element={<About />} />
+            </Routes>
+          </div>
+        </LessonsProvider>
+      </UserContextProvider>
     </BrowserRouter>
   );
 }
