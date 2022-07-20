@@ -76,7 +76,7 @@ function Header() {
                         </div>
                         <div className="ms-3">
                           <span className="h6 d-block fw-normal mb-1 text-xs text-gray-600">
-                            Congratulations for joining COMBACT
+                            Welcome to COMBACT
                           </span>
                           <small className="small text-gray-600">
                             4 minutes ago

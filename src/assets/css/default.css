@@ -15526,3 +15526,17 @@ STYLE SWITCHER FOR DEMO
 #style-switch .h4 {
   color: #495057;
 }
+
+/*
+
+=====================
+ABOUT PAGE
+=====================
+
+*/
+
+@media (min-width: 768px) {
+  .about-content {
+    max-width: 75%;
+  }
+}
