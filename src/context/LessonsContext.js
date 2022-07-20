@@ -28,7 +28,7 @@ export function LessonsProvider({ children }) {
           url: "https://www.youtube.com/embed/UukVP7Mg3TU",
           time: "5 mins",
         },
-        classDrills: [
+        classDrill: [
           {
             id: 1,
             question: "",
@@ -36,6 +36,31 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
+            correctAnswer: function () {
+              return this.a;
+            },
+          },
+        ],
+        quiz: [
+          {
+            id: 1,
+            question:
+              "Calculus basically deals with the following except _____.",
+            a: "limits",
+            b: "derivatives",
+            c: "integrals",
+            d: "surd",
+            correctAnswer: function () {
+              return this.d;
+            },
+          },
+          {
+            id: 2,
+            question: "The limit of a function at a point will give _____.",
+            a: "a constant",
+            b: "a variable",
+            c: "a function",
+            d: "all of the above",
             correctAnswer: function () {
               return this.a;
             },
@@ -57,7 +82,7 @@ export function LessonsProvider({ children }) {
           url: "https://www.youtube.com/embed/lQRiw264bnI",
           time: "5 mins",
         },
-        classDrills: [
+        classDrill: [
           {
             id: 1,
             question: "",
@@ -65,6 +90,31 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
+            correctAnswer: function () {
+              return this.a;
+            },
+          },
+        ],
+        quiz: [
+          {
+            id: 1,
+            question:
+              "Calculus basically deals with the following except _____.",
+            a: "limits",
+            b: "derivatives",
+            c: "integrals",
+            d: "surd",
+            correctAnswer: function () {
+              return this.d;
+            },
+          },
+          {
+            id: 2,
+            question: "The limit of a function at a point will give _____.",
+            a: "a constant",
+            b: "a variable",
+            c: "a function",
+            d: "all of the above",
             correctAnswer: function () {
               return this.a;
             },
@@ -84,7 +134,7 @@ export function LessonsProvider({ children }) {
           url: "https://www.youtube.com/embed/jTvTthjtIrk",
           time: "5 mins",
         },
-        classDrills: [
+        classDrill: [
           {
             id: 1,
             question: "",
@@ -92,6 +142,31 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
+            correctAnswer: function () {
+              return this.a;
+            },
+          },
+        ],
+        quiz: [
+          {
+            id: 1,
+            question:
+              "Calculus basically deals with the following except _____.",
+            a: "limits",
+            b: "derivatives",
+            c: "integrals",
+            d: "surd",
+            correctAnswer: function () {
+              return this.d;
+            },
+          },
+          {
+            id: 2,
+            question: "The limit of a function at a point will give _____.",
+            a: "a constant",
+            b: "a variable",
+            c: "a function",
+            d: "all of the above",
             correctAnswer: function () {
               return this.a;
             },
@@ -111,7 +186,7 @@ export function LessonsProvider({ children }) {
           url: "https://www.youtube.com/embed/h_Rf_2OeSJU",
           time: "5 mins",
         },
-        classDrills: [
+        classDrill: [
           {
             id: 1,
             question: "",
@@ -119,6 +194,31 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
+            correctAnswer: function () {
+              return this.a;
+            },
+          },
+        ],
+        quiz: [
+          {
+            id: 1,
+            question:
+              "Calculus basically deals with the following except _____.",
+            a: "limits",
+            b: "derivatives",
+            c: "integrals",
+            d: "surd",
+            correctAnswer: function () {
+              return this.d;
+            },
+          },
+          {
+            id: 2,
+            question: "The limit of a function at a point will give _____.",
+            a: "a constant",
+            b: "a variable",
+            c: "a function",
+            d: "all of the above",
             correctAnswer: function () {
               return this.a;
             },
@@ -138,7 +238,7 @@ export function LessonsProvider({ children }) {
           url: "https://www.youtube.com/embed/YpYSEXAxMJ0",
           time: "7 mins",
         },
-        classDrills: [
+        classDrill: [
           {
             id: 1,
             question: "",
@@ -146,6 +246,31 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
+            correctAnswer: function () {
+              return this.a;
+            },
+          },
+        ],
+        quiz: [
+          {
+            id: 1,
+            question:
+              "Calculus basically deals with the following except _____.",
+            a: "limits",
+            b: "derivatives",
+            c: "integrals",
+            d: "surd",
+            correctAnswer: function () {
+              return this.d;
+            },
+          },
+          {
+            id: 2,
+            question: "The limit of a function at a point will give _____.",
+            a: "a constant",
+            b: "a variable",
+            c: "a function",
+            d: "all of the above",
             correctAnswer: function () {
               return this.a;
             },
@@ -166,7 +291,7 @@ export function LessonsProvider({ children }) {
           url: "https://www.youtube.com/embed/jqIoqECyY0A",
           time: "2 mins",
         },
-        classDrills: [
+        classDrill: [
           {
             id: 1,
             question: "",
@@ -174,6 +299,31 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
+            correctAnswer: function () {
+              return this.a;
+            },
+          },
+        ],
+        quiz: [
+          {
+            id: 1,
+            question:
+              "Calculus basically deals with the following except _____.",
+            a: "limits",
+            b: "derivatives",
+            c: "integrals",
+            d: "surd",
+            correctAnswer: function () {
+              return this.d;
+            },
+          },
+          {
+            id: 2,
+            question: "The limit of a function at a point will give _____.",
+            a: "a constant",
+            b: "a variable",
+            c: "a function",
+            d: "all of the above",
             correctAnswer: function () {
               return this.a;
             },
@@ -194,7 +344,7 @@ export function LessonsProvider({ children }) {
           url: "https://www.youtube.com/embed/1Hoev0SIzjw",
           time: "3 mins",
         },
-        classDrills: [
+        classDrill: [
           {
             id: 1,
             question: "",
@@ -202,6 +352,31 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
+            correctAnswer: function () {
+              return this.a;
+            },
+          },
+        ],
+        quiz: [
+          {
+            id: 1,
+            question:
+              "Calculus basically deals with the following except _____.",
+            a: "limits",
+            b: "derivatives",
+            c: "integrals",
+            d: "surd",
+            correctAnswer: function () {
+              return this.d;
+            },
+          },
+          {
+            id: 2,
+            question: "The limit of a function at a point will give _____.",
+            a: "a constant",
+            b: "a variable",
+            c: "a function",
+            d: "all of the above",
             correctAnswer: function () {
               return this.a;
             },
@@ -222,7 +397,7 @@ export function LessonsProvider({ children }) {
           url: "https://www.youtube.com/embed/vARHnOJ8fMg",
           time: "3 mins",
         },
-        classDrills: [
+        classDrill: [
           {
             id: 1,
             question: "",
@@ -230,6 +405,31 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
+            correctAnswer: function () {
+              return this.a;
+            },
+          },
+        ],
+        quiz: [
+          {
+            id: 1,
+            question:
+              "Calculus basically deals with the following except _____.",
+            a: "limits",
+            b: "derivatives",
+            c: "integrals",
+            d: "surd",
+            correctAnswer: function () {
+              return this.d;
+            },
+          },
+          {
+            id: 2,
+            question: "The limit of a function at a point will give _____.",
+            a: "a constant",
+            b: "a variable",
+            c: "a function",
+            d: "all of the above",
             correctAnswer: function () {
               return this.a;
             },
@@ -250,7 +450,7 @@ export function LessonsProvider({ children }) {
           url: "https://www.youtube.com/embed/UiUBJxjnApQ",
           time: "10 mins",
         },
-        classDrills: [
+        classDrill: [
           {
             id: 1,
             question: "",
@@ -258,6 +458,31 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
+            correctAnswer: function () {
+              return this.a;
+            },
+          },
+        ],
+        quiz: [
+          {
+            id: 1,
+            question:
+              "Calculus basically deals with the following except _____.",
+            a: "limits",
+            b: "derivatives",
+            c: "integrals",
+            d: "surd",
+            correctAnswer: function () {
+              return this.d;
+            },
+          },
+          {
+            id: 2,
+            question: "The limit of a function at a point will give _____.",
+            a: "a constant",
+            b: "a variable",
+            c: "a function",
+            d: "all of the above",
             correctAnswer: function () {
               return this.a;
             },
@@ -278,7 +503,7 @@ export function LessonsProvider({ children }) {
           url: "https://www.youtube.com/embed/NVaV7o_SOrc",
           time: "3 mins",
         },
-        classDrills: [
+        classDrill: [
           {
             id: 1,
             question: "",
@@ -286,6 +511,31 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
+            correctAnswer: function () {
+              return this.a;
+            },
+          },
+        ],
+        quiz: [
+          {
+            id: 1,
+            question:
+              "Calculus basically deals with the following except _____.",
+            a: "limits",
+            b: "derivatives",
+            c: "integrals",
+            d: "surd",
+            correctAnswer: function () {
+              return this.d;
+            },
+          },
+          {
+            id: 2,
+            question: "The limit of a function at a point will give _____.",
+            a: "a constant",
+            b: "a variable",
+            c: "a function",
+            d: "all of the above",
             correctAnswer: function () {
               return this.a;
             },
@@ -306,7 +556,7 @@ export function LessonsProvider({ children }) {
           url: "https://www.youtube.com/embed/OrkgkiaGMpM",
           time: "6 mins",
         },
-        classDrills: [
+        classDrill: [
           {
             id: 1,
             question: "",
@@ -314,6 +564,31 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
+            correctAnswer: function () {
+              return this.a;
+            },
+          },
+        ],
+        quiz: [
+          {
+            id: 1,
+            question:
+              "Calculus basically deals with the following except _____.",
+            a: "limits",
+            b: "derivatives",
+            c: "integrals",
+            d: "surd",
+            correctAnswer: function () {
+              return this.d;
+            },
+          },
+          {
+            id: 2,
+            question: "The limit of a function at a point will give _____.",
+            a: "a constant",
+            b: "a variable",
+            c: "a function",
+            d: "all of the above",
             correctAnswer: function () {
               return this.a;
             },
@@ -334,7 +609,7 @@ export function LessonsProvider({ children }) {
           url: "https://www.youtube.com/embed/Rp4e_RySr0g",
           time: "9 mins",
         },
-        classDrills: [
+        classDrill: [
           {
             id: 1,
             question: "",
@@ -342,6 +617,31 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
+            correctAnswer: function () {
+              return this.a;
+            },
+          },
+        ],
+        quiz: [
+          {
+            id: 1,
+            question:
+              "Calculus basically deals with the following except _____.",
+            a: "limits",
+            b: "derivatives",
+            c: "integrals",
+            d: "surd",
+            correctAnswer: function () {
+              return this.d;
+            },
+          },
+          {
+            id: 2,
+            question: "The limit of a function at a point will give _____.",
+            a: "a constant",
+            b: "a variable",
+            c: "a function",
+            d: "all of the above",
             correctAnswer: function () {
               return this.a;
             },
@@ -362,7 +662,7 @@ export function LessonsProvider({ children }) {
           url: "https://www.youtube.com/embed/InDHwh1CvOg",
           time: "9 mins",
         },
-        classDrills: [
+        classDrill: [
           {
             id: 1,
             question: "",
@@ -370,6 +670,31 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
+            correctAnswer: function () {
+              return this.a;
+            },
+          },
+        ],
+        quiz: [
+          {
+            id: 1,
+            question:
+              "Calculus basically deals with the following except _____.",
+            a: "limits",
+            b: "derivatives",
+            c: "integrals",
+            d: "surd",
+            correctAnswer: function () {
+              return this.d;
+            },
+          },
+          {
+            id: 2,
+            question: "The limit of a function at a point will give _____.",
+            a: "a constant",
+            b: "a variable",
+            c: "a function",
+            d: "all of the above",
             correctAnswer: function () {
               return this.a;
             },
@@ -390,7 +715,7 @@ export function LessonsProvider({ children }) {
           url: "https://www.youtube.com/embed/X3l-q5CpSfE",
           time: "6 mins",
         },
-        classDrills: [
+        classDrill: [
           {
             id: 1,
             question: "",
@@ -398,6 +723,31 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
+            correctAnswer: function () {
+              return this.a;
+            },
+          },
+        ],
+        quiz: [
+          {
+            id: 1,
+            question:
+              "Calculus basically deals with the following except _____.",
+            a: "limits",
+            b: "derivatives",
+            c: "integrals",
+            d: "surd",
+            correctAnswer: function () {
+              return this.d;
+            },
+          },
+          {
+            id: 2,
+            question: "The limit of a function at a point will give _____.",
+            a: "a constant",
+            b: "a variable",
+            c: "a function",
+            d: "all of the above",
             correctAnswer: function () {
               return this.a;
             },
@@ -417,7 +767,7 @@ export function LessonsProvider({ children }) {
           url: "https://www.youtube.com/embed/tFHALKP22ao",
           time: "10 mins",
         },
-        classDrills: [
+        classDrill: [
           {
             id: 1,
             question: "",
@@ -425,6 +775,31 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
+            correctAnswer: function () {
+              return this.a;
+            },
+          },
+        ],
+        quiz: [
+          {
+            id: 1,
+            question:
+              "Calculus basically deals with the following except _____.",
+            a: "limits",
+            b: "derivatives",
+            c: "integrals",
+            d: "surd",
+            correctAnswer: function () {
+              return this.d;
+            },
+          },
+          {
+            id: 2,
+            question: "The limit of a function at a point will give _____.",
+            a: "a constant",
+            b: "a variable",
+            c: "a function",
+            d: "all of the above",
             correctAnswer: function () {
               return this.a;
             },
@@ -444,7 +819,7 @@ export function LessonsProvider({ children }) {
           url: "https://www.youtube.com/embed/e-VC1flZg0I",
           time: "10 mins",
         },
-        classDrills: [
+        classDrill: [
           {
             id: 1,
             question: "",
@@ -452,6 +827,31 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
+            correctAnswer: function () {
+              return this.a;
+            },
+          },
+        ],
+        quiz: [
+          {
+            id: 1,
+            question:
+              "Calculus basically deals with the following except _____.",
+            a: "limits",
+            b: "derivatives",
+            c: "integrals",
+            d: "surd",
+            correctAnswer: function () {
+              return this.d;
+            },
+          },
+          {
+            id: 2,
+            question: "The limit of a function at a point will give _____.",
+            a: "a constant",
+            b: "a variable",
+            c: "a function",
+            d: "all of the above",
             correctAnswer: function () {
               return this.a;
             },
@@ -471,7 +871,7 @@ export function LessonsProvider({ children }) {
           url: "https://www.youtube.com/embed/jkVumUaM2Oo",
           time: "20 mins",
         },
-        classDrills: [
+        classDrill: [
           {
             id: 1,
             question: "",
@@ -479,6 +879,31 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
+            correctAnswer: function () {
+              return this.a;
+            },
+          },
+        ],
+        quiz: [
+          {
+            id: 1,
+            question:
+              "Calculus basically deals with the following except _____.",
+            a: "limits",
+            b: "derivatives",
+            c: "integrals",
+            d: "surd",
+            correctAnswer: function () {
+              return this.d;
+            },
+          },
+          {
+            id: 2,
+            question: "The limit of a function at a point will give _____.",
+            a: "a constant",
+            b: "a variable",
+            c: "a function",
+            d: "all of the above",
             correctAnswer: function () {
               return this.a;
             },
@@ -498,7 +923,7 @@ export function LessonsProvider({ children }) {
           url: "https://www.youtube.com/embed/yB7Hb7mpvjU",
           time: "7 mins",
         },
-        classDrills: [
+        classDrill: [
           {
             id: 1,
             question: "",
@@ -506,6 +931,31 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
+            correctAnswer: function () {
+              return this.a;
+            },
+          },
+        ],
+        quiz: [
+          {
+            id: 1,
+            question:
+              "Calculus basically deals with the following except _____.",
+            a: "limits",
+            b: "derivatives",
+            c: "integrals",
+            d: "surd",
+            correctAnswer: function () {
+              return this.d;
+            },
+          },
+          {
+            id: 2,
+            question: "The limit of a function at a point will give _____.",
+            a: "a constant",
+            b: "a variable",
+            c: "a function",
+            d: "all of the above",
             correctAnswer: function () {
               return this.a;
             },
@@ -525,7 +975,7 @@ export function LessonsProvider({ children }) {
           url: "https://www.youtube.com/embed/Qjg0hMLrfOk",
           time: "5 mins",
         },
-        classDrills: [
+        classDrill: [
           {
             id: 1,
             question: "",
@@ -533,6 +983,31 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
+            correctAnswer: function () {
+              return this.a;
+            },
+          },
+        ],
+        quiz: [
+          {
+            id: 1,
+            question:
+              "Calculus basically deals with the following except _____.",
+            a: "limits",
+            b: "derivatives",
+            c: "integrals",
+            d: "surd",
+            correctAnswer: function () {
+              return this.d;
+            },
+          },
+          {
+            id: 2,
+            question: "The limit of a function at a point will give _____.",
+            a: "a constant",
+            b: "a variable",
+            c: "a function",
+            d: "all of the above",
             correctAnswer: function () {
               return this.a;
             },
@@ -552,7 +1027,7 @@ export function LessonsProvider({ children }) {
           url: "https://www.youtube.com/embed/rRphiUtRKcY",
           time: "10 mins",
         },
-        classDrills: [
+        classDrill: [
           {
             id: 1,
             question: "",
@@ -560,6 +1035,31 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
+            correctAnswer: function () {
+              return this.a;
+            },
+          },
+        ],
+        quiz: [
+          {
+            id: 1,
+            question:
+              "Calculus basically deals with the following except _____.",
+            a: "limits",
+            b: "derivatives",
+            c: "integrals",
+            d: "surd",
+            correctAnswer: function () {
+              return this.d;
+            },
+          },
+          {
+            id: 2,
+            question: "The limit of a function at a point will give _____.",
+            a: "a constant",
+            b: "a variable",
+            c: "a function",
+            d: "all of the above",
             correctAnswer: function () {
               return this.a;
             },
@@ -579,7 +1079,7 @@ export function LessonsProvider({ children }) {
           url: "https://www.youtube.com/embed/pBc4Udqw330",
           time: "6 mins",
         },
-        classDrills: [
+        classDrill: [
           {
             id: 1,
             question: "",
@@ -587,6 +1087,31 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
+            correctAnswer: function () {
+              return this.a;
+            },
+          },
+        ],
+        quiz: [
+          {
+            id: 1,
+            question:
+              "Calculus basically deals with the following except _____.",
+            a: "limits",
+            b: "derivatives",
+            c: "integrals",
+            d: "surd",
+            correctAnswer: function () {
+              return this.d;
+            },
+          },
+          {
+            id: 2,
+            question: "The limit of a function at a point will give _____.",
+            a: "a constant",
+            b: "a variable",
+            c: "a function",
+            d: "all of the above",
             correctAnswer: function () {
               return this.a;
             },
@@ -606,7 +1131,7 @@ export function LessonsProvider({ children }) {
           url: "https://www.youtube.com/embed/FBfXqorEad0",
           time: "10 mins",
         },
-        classDrills: [
+        classDrill: [
           {
             id: 1,
             question: "",
@@ -614,6 +1139,31 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
+            correctAnswer: function () {
+              return this.a;
+            },
+          },
+        ],
+        quiz: [
+          {
+            id: 1,
+            question:
+              "Calculus basically deals with the following except _____.",
+            a: "limits",
+            b: "derivatives",
+            c: "integrals",
+            d: "surd",
+            correctAnswer: function () {
+              return this.d;
+            },
+          },
+          {
+            id: 2,
+            question: "The limit of a function at a point will give _____.",
+            a: "a constant",
+            b: "a variable",
+            c: "a function",
+            d: "all of the above",
             correctAnswer: function () {
               return this.a;
             },
@@ -633,7 +1183,7 @@ export function LessonsProvider({ children }) {
           url: "https://www.youtube.com/embed/5fJY3fYgTbU",
           time: "9 mins",
         },
-        classDrills: [
+        classDrill: [
           {
             id: 1,
             question: "",
@@ -641,6 +1191,31 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
+            correctAnswer: function () {
+              return this.a;
+            },
+          },
+        ],
+        quiz: [
+          {
+            id: 1,
+            question:
+              "Calculus basically deals with the following except _____.",
+            a: "limits",
+            b: "derivatives",
+            c: "integrals",
+            d: "surd",
+            correctAnswer: function () {
+              return this.d;
+            },
+          },
+          {
+            id: 2,
+            question: "The limit of a function at a point will give _____.",
+            a: "a constant",
+            b: "a variable",
+            c: "a function",
+            d: "all of the above",
             correctAnswer: function () {
               return this.a;
             },
@@ -660,7 +1235,7 @@ export function LessonsProvider({ children }) {
           url: "https://www.youtube.com/embed/Jf38DwIV6U4",
           time: "8 mins",
         },
-        classDrills: [
+        classDrill: [
           {
             id: 1,
             question: "",
@@ -668,6 +1243,31 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
+            correctAnswer: function () {
+              return this.a;
+            },
+          },
+        ],
+        quiz: [
+          {
+            id: 1,
+            question:
+              "Calculus basically deals with the following except _____.",
+            a: "limits",
+            b: "derivatives",
+            c: "integrals",
+            d: "surd",
+            correctAnswer: function () {
+              return this.d;
+            },
+          },
+          {
+            id: 2,
+            question: "The limit of a function at a point will give _____.",
+            a: "a constant",
+            b: "a variable",
+            c: "a function",
+            d: "all of the above",
             correctAnswer: function () {
               return this.a;
             },
@@ -687,7 +1287,7 @@ export function LessonsProvider({ children }) {
           url: "https://www.youtube.com/embed/CRXmjW5RSbU",
           time: "13 mins",
         },
-        classDrills: [
+        classDrill: [
           {
             id: 1,
             question: "",
@@ -695,6 +1295,31 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
+            correctAnswer: function () {
+              return this.a;
+            },
+          },
+        ],
+        quiz: [
+          {
+            id: 1,
+            question:
+              "Calculus basically deals with the following except _____.",
+            a: "limits",
+            b: "derivatives",
+            c: "integrals",
+            d: "surd",
+            correctAnswer: function () {
+              return this.d;
+            },
+          },
+          {
+            id: 2,
+            question: "The limit of a function at a point will give _____.",
+            a: "a constant",
+            b: "a variable",
+            c: "a function",
+            d: "all of the above",
             correctAnswer: function () {
               return this.a;
             },
@@ -714,7 +1339,7 @@ export function LessonsProvider({ children }) {
           url: "https://www.youtube.com/embed/Ur_kdKXnZPo",
           time: "9 mins",
         },
-        classDrills: [
+        classDrill: [
           {
             id: 1,
             question: "",
@@ -722,6 +1347,31 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
+            correctAnswer: function () {
+              return this.a;
+            },
+          },
+        ],
+        quiz: [
+          {
+            id: 1,
+            question:
+              "Calculus basically deals with the following except _____.",
+            a: "limits",
+            b: "derivatives",
+            c: "integrals",
+            d: "surd",
+            correctAnswer: function () {
+              return this.d;
+            },
+          },
+          {
+            id: 2,
+            question: "The limit of a function at a point will give _____.",
+            a: "a constant",
+            b: "a variable",
+            c: "a function",
+            d: "all of the above",
             correctAnswer: function () {
               return this.a;
             },
@@ -741,7 +1391,7 @@ export function LessonsProvider({ children }) {
           url: "https://www.youtube.com/embed/jSRN0yxiD1o",
           time: "10 mins",
         },
-        classDrills: [
+        classDrill: [
           {
             id: 1,
             question: "",
@@ -749,6 +1399,31 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
+            correctAnswer: function () {
+              return this.a;
+            },
+          },
+        ],
+        quiz: [
+          {
+            id: 1,
+            question:
+              "Calculus basically deals with the following except _____.",
+            a: "limits",
+            b: "derivatives",
+            c: "integrals",
+            d: "surd",
+            correctAnswer: function () {
+              return this.d;
+            },
+          },
+          {
+            id: 2,
+            question: "The limit of a function at a point will give _____.",
+            a: "a constant",
+            b: "a variable",
+            c: "a function",
+            d: "all of the above",
             correctAnswer: function () {
               return this.a;
             },

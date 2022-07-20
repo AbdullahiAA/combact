@@ -18,7 +18,7 @@ function Header() {
                 </div>
               </NavLink>
               {/* <!-- Toggle Button--> */}
-              <NavLink className="menu-btn active" id="toggle-btn" to="/">
+              <NavLink className="menu-btn active" id="toggle-btn" to="#">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -49,16 +49,14 @@ function Header() {
                       d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
                     />
                   </svg>
-                  <span className="badge bg-red badge-corner fw-normal">
-                    12
-                  </span>
+                  <span className="badge bg-red badge-corner fw-normal">1</span>
                 </NavLink>
                 <ul
                   className="dropdown-menu dropdown-menu-end mt-3 shadow-sm"
                   aria-labelledby="notifications"
                 >
                   <li>
-                    <NavLink className="dropdown-item py-3" to="/">
+                    <NavLink className="dropdown-item py-3 bg-white" to="#">
                       <div className="d-flex">
                         <div className="icon icon-sm bg-blue">
                           <svg
@@ -78,7 +76,7 @@ function Header() {
                         </div>
                         <div className="ms-3">
                           <span className="h6 d-block fw-normal mb-1 text-xs text-gray-600">
-                            You have 6 new messages
+                            Congratulations for joining COMBACT
                           </span>
                           <small className="small text-gray-600">
                             4 minutes ago
@@ -87,8 +85,8 @@ function Header() {
                       </div>
                     </NavLink>
                   </li>
-                  <li>
-                    <NavLink className="dropdown-item py-3" to="/">
+                  {/* <li>
+                    <NavLink className="dropdown-item py-3 bg-white" to="#">
                       <div className="d-flex">
                         <div className="icon icon-sm bg-green">
                           <svg
@@ -118,7 +116,7 @@ function Header() {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink className="dropdown-item py-3" to="/">
+                    <NavLink className="dropdown-item py-3 bg-white" to="#">
                       <div className="d-flex">
                         <div className="icon icon-sm bg-orange">
                           <svg
@@ -148,7 +146,7 @@ function Header() {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink className="dropdown-item py-3" to="/">
+                    <NavLink className="dropdown-item py-3 bg-white" to="#">
                       <div className="d-flex">
                         <div className="icon icon-sm bg-green">
                           <svg
@@ -176,14 +174,14 @@ function Header() {
                         </div>
                       </div>
                     </NavLink>
-                  </li>
+                  </li> */}
                   <li>
                     <NavLink
-                      className="dropdown-item all-notifications text-center"
-                      to="/"
+                      className="dropdown-item all-notifications text-center bg-white"
+                      to="#"
                     >
                       <strong className="text-xs text-gray-600">
-                        view all notifications
+                        Mark all as read
                       </strong>
                     </NavLink>
                   </li>

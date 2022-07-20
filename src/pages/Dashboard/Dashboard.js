@@ -19,7 +19,7 @@ function Dashboard() {
       <div className="card py-0 mb-0">
         <div className="card-body">
           <div className="row gx-5 bg-white">
-            <div className="col-xl-3 col-sm-6 py-4 border-lg-end border-gray-200">
+            <div className="col-xl-6 col-sm-6 py-4 border-lg-end border-gray-200">
               <div className="d-flex align-items-center justify-content-between">
                 <div className="d-flex align-items-center">
                   <div className="icon flex-shrink-0 bg-violet">
@@ -48,8 +48,8 @@ function Dashboard() {
                       <div
                         className="progress-bar bg-violet"
                         role="progressbar"
-                        style={{ width: "25%", height: "4px" }}
-                        aria-valuenow="25"
+                        style={{ width: "0%", height: "4px" }}
+                        aria-valuenow="0"
                         aria-valuemin="0"
                         aria-valuemax="100"
                       ></div>
@@ -57,26 +57,26 @@ function Dashboard() {
                   </div>
                 </div>
                 <div className="number">
-                  <strong className="text-lg">25</strong>
+                  <strong className="text-lg">0</strong>
                 </div>
               </div>
             </div>
 
-            <div className="col-xl-3 col-sm-6 py-4 border-lg-end border-gray-200">
+            <div className="col-xl-6 col-sm-6 py-4 border-lg-end border-gray-200">
               <div className="d-flex align-items-center justify-content-between">
                 <div className="d-flex align-items-center">
                   <div className="icon flex-shrink-0 bg-red">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
-                      class="svg-icon svg-icon-sm svg-icon-light"
+                      className="svg-icon svg-icon-sm svg-icon-light"
                       fill="none"
                       viewBox="0 0 24 24"
                       stroke="currentColor"
-                      stroke-width="2"
+                      strokeWidth="2"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
                         d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
                       />
                     </svg>
@@ -108,7 +108,7 @@ function Dashboard() {
               </div>
             </div>
 
-            <div className="col-xl-3 col-sm-6 py-4 border-lg-end border-gray-200">
+            <div className="col-xl-6 col-sm-6 py-4 border-lg-end border-gray-200">
               <div className="d-flex align-items-center justify-content-between">
                 <div className="d-flex align-items-center">
                   <div className="icon flex-shrink-0 bg-green">
@@ -137,8 +137,8 @@ function Dashboard() {
                       <div
                         className="progress-bar bg-green"
                         role="progressbar"
-                        style={{ width: "40%", height: "4px" }}
-                        aria-valuenow="40"
+                        style={{ width: "0%", height: "4px" }}
+                        aria-valuenow="0"
                         aria-valuemin="0"
                         aria-valuemax="100"
                       ></div>
@@ -146,12 +146,12 @@ function Dashboard() {
                   </div>
                 </div>
                 <div className="number">
-                  <strong className="text-lg">40</strong>
+                  <strong className="text-lg">0</strong>
                 </div>
               </div>
             </div>
 
-            <div className="col-xl-3 col-sm-6 py-4">
+            <div className="col-xl-6 col-sm-6 py-4">
               <div className="d-flex align-items-center justify-content-between">
                 <div className="d-flex align-items-center">
                   <div className="icon flex-shrink-0 bg-orange">
@@ -180,8 +180,11 @@ function Dashboard() {
                       <div
                         className="progress-bar bg-orange"
                         role="progressbar"
-                        style={{ width: "100%", height: "4px" }}
-                        aria-valuenow="50"
+                        style={{
+                          width: `${lessonsCount && "100%"}`,
+                          height: "4px",
+                        }}
+                        aria-valuenow={lessonsCount}
                         aria-valuemin="0"
                         aria-valuemax="100"
                       ></div>
@@ -189,7 +192,7 @@ function Dashboard() {
                   </div>
                 </div>
                 <div className="number">
-                  <strong className="text-lg">50</strong>
+                  <strong className="text-lg">{lessonsCount}</strong>
                 </div>
               </div>
             </div>

@@ -9807,7 +9807,7 @@ fieldset:disabled .btn {
 }
 
 .text-palatinateBlue {
-  color: #3B25E6 !important;
+  color: #3b25e6 !important;
 }
 
 .text-paleBlue {
@@ -13638,6 +13638,10 @@ nav.navbar .search-box form input {
   height: 18px;
 }
 
+.svg-icon-solid {
+  stroke: none !important;
+}
+
 .form-control::-webkit-input-placeholder {
   font-size: 0.85rem;
 }
@@ -13731,6 +13735,10 @@ nav.navbar .search-box form input {
 .was-validated .form-control:invalid,
 .form-control.is-invalid {
   border-color: #dc3545 !important;
+}
+
+.cursor-not-allowed {
+  cursor: not-allowed;
 }
 
 /*

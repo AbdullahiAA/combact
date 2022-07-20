@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import "./LessonPage.css";
 import Layout from "../../components/Layout/Layout";
-// import vid01 from "../../assets/videos/lesson01.mp4";
 import VideoFrame from "../../components/Lessons/VideoFrame";
 import { useLessons } from "../../context/LessonsContext";
 
@@ -65,7 +64,7 @@ function LessonPage() {
       <div className="card">
         <div className="card-header">
           <h3 className="mb-0 text-palatinateBlue fw-normal">
-            Enjoy this lesson buddy!
+            Enjoy this lesson, Buddy!
           </h3>
         </div>
         <div className="card-body">
@@ -77,7 +76,7 @@ function LessonPage() {
       <div className="card">
         <div className="card-header">
           <h3 className="mb-0 text-palatinateBlue fw-normal">
-            Let's have some fun with these questions!
+            It's time for a class drill, Champ!
           </h3>
         </div>
         <div className="card-body">

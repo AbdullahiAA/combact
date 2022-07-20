@@ -45,9 +45,7 @@ function Lessons() {
             <div className="text-sm text-gray-600 d-flex align-items-center flex-shrink-0">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className={
-                  "svg-icon svg-icon-sm svg-icon-light me-2 flex-shrink-0"
-                }
+                className="svg-icon svg-icon-sm svg-icon-light me-2 flex-shrink-0"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
