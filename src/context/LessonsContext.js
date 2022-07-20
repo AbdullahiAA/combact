@@ -31,14 +31,21 @@ export function LessonsProvider({ children }) {
         classDrill: [
           {
             id: 1,
-            question: "",
-            a: "",
-            b: "",
-            c: "",
-            d: "",
-            correctAnswer: function () {
-              return this.a;
-            },
+            question: "Who invented Calculus?",
+            a: "Pennie",
+            b: "Rollins",
+            c: "Dean",
+            d: "Roman",
+            correctAnswer: "a",
+          },
+          {
+            id: 1,
+            question: "How many branches of Calculus do we have?",
+            a: "1",
+            b: "2",
+            c: "3",
+            d: "4",
+            correctAnswer: "a",
           },
         ],
         quiz: [
@@ -50,9 +57,7 @@ export function LessonsProvider({ children }) {
             b: "derivatives",
             c: "integrals",
             d: "surd",
-            correctAnswer: function () {
-              return this.d;
-            },
+            correctAnswer: "a",
           },
           {
             id: 2,
@@ -61,9 +66,7 @@ export function LessonsProvider({ children }) {
             b: "a variable",
             c: "a function",
             d: "all of the above",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
       },
@@ -90,9 +93,7 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
         quiz: [
@@ -104,9 +105,7 @@ export function LessonsProvider({ children }) {
             b: "derivatives",
             c: "integrals",
             d: "surd",
-            correctAnswer: function () {
-              return this.d;
-            },
+            correctAnswer: "a",
           },
           {
             id: 2,
@@ -115,9 +114,7 @@ export function LessonsProvider({ children }) {
             b: "a variable",
             c: "a function",
             d: "all of the above",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
       },
@@ -142,9 +139,7 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
         quiz: [
@@ -156,9 +151,7 @@ export function LessonsProvider({ children }) {
             b: "derivatives",
             c: "integrals",
             d: "surd",
-            correctAnswer: function () {
-              return this.d;
-            },
+            correctAnswer: "a",
           },
           {
             id: 2,
@@ -167,9 +160,7 @@ export function LessonsProvider({ children }) {
             b: "a variable",
             c: "a function",
             d: "all of the above",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
       },
@@ -194,9 +185,7 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
         quiz: [
@@ -208,9 +197,7 @@ export function LessonsProvider({ children }) {
             b: "derivatives",
             c: "integrals",
             d: "surd",
-            correctAnswer: function () {
-              return this.d;
-            },
+            correctAnswer: "a",
           },
           {
             id: 2,
@@ -219,9 +206,7 @@ export function LessonsProvider({ children }) {
             b: "a variable",
             c: "a function",
             d: "all of the above",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
       },
@@ -246,9 +231,7 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
         quiz: [
@@ -260,9 +243,7 @@ export function LessonsProvider({ children }) {
             b: "derivatives",
             c: "integrals",
             d: "surd",
-            correctAnswer: function () {
-              return this.d;
-            },
+            correctAnswer: "a",
           },
           {
             id: 2,
@@ -271,9 +252,7 @@ export function LessonsProvider({ children }) {
             b: "a variable",
             c: "a function",
             d: "all of the above",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
       },
@@ -299,9 +278,7 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
         quiz: [
@@ -313,9 +290,7 @@ export function LessonsProvider({ children }) {
             b: "derivatives",
             c: "integrals",
             d: "surd",
-            correctAnswer: function () {
-              return this.d;
-            },
+            correctAnswer: "a",
           },
           {
             id: 2,
@@ -324,9 +299,7 @@ export function LessonsProvider({ children }) {
             b: "a variable",
             c: "a function",
             d: "all of the above",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
       },
@@ -352,9 +325,7 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
         quiz: [
@@ -366,9 +337,7 @@ export function LessonsProvider({ children }) {
             b: "derivatives",
             c: "integrals",
             d: "surd",
-            correctAnswer: function () {
-              return this.d;
-            },
+            correctAnswer: "a",
           },
           {
             id: 2,
@@ -377,9 +346,7 @@ export function LessonsProvider({ children }) {
             b: "a variable",
             c: "a function",
             d: "all of the above",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
       },
@@ -405,9 +372,7 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
         quiz: [
@@ -419,9 +384,7 @@ export function LessonsProvider({ children }) {
             b: "derivatives",
             c: "integrals",
             d: "surd",
-            correctAnswer: function () {
-              return this.d;
-            },
+            correctAnswer: "a",
           },
           {
             id: 2,
@@ -430,9 +393,7 @@ export function LessonsProvider({ children }) {
             b: "a variable",
             c: "a function",
             d: "all of the above",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
       },
@@ -458,9 +419,7 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
         quiz: [
@@ -472,9 +431,7 @@ export function LessonsProvider({ children }) {
             b: "derivatives",
             c: "integrals",
             d: "surd",
-            correctAnswer: function () {
-              return this.d;
-            },
+            correctAnswer: "a",
           },
           {
             id: 2,
@@ -483,9 +440,7 @@ export function LessonsProvider({ children }) {
             b: "a variable",
             c: "a function",
             d: "all of the above",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
       },
@@ -511,9 +466,7 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
         quiz: [
@@ -525,9 +478,7 @@ export function LessonsProvider({ children }) {
             b: "derivatives",
             c: "integrals",
             d: "surd",
-            correctAnswer: function () {
-              return this.d;
-            },
+            correctAnswer: "a",
           },
           {
             id: 2,
@@ -536,9 +487,7 @@ export function LessonsProvider({ children }) {
             b: "a variable",
             c: "a function",
             d: "all of the above",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
       },
@@ -564,9 +513,7 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
         quiz: [
@@ -578,9 +525,7 @@ export function LessonsProvider({ children }) {
             b: "derivatives",
             c: "integrals",
             d: "surd",
-            correctAnswer: function () {
-              return this.d;
-            },
+            correctAnswer: "a",
           },
           {
             id: 2,
@@ -589,9 +534,7 @@ export function LessonsProvider({ children }) {
             b: "a variable",
             c: "a function",
             d: "all of the above",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
       },
@@ -617,9 +560,7 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
         quiz: [
@@ -631,9 +572,7 @@ export function LessonsProvider({ children }) {
             b: "derivatives",
             c: "integrals",
             d: "surd",
-            correctAnswer: function () {
-              return this.d;
-            },
+            correctAnswer: "a",
           },
           {
             id: 2,
@@ -642,9 +581,7 @@ export function LessonsProvider({ children }) {
             b: "a variable",
             c: "a function",
             d: "all of the above",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
       },
@@ -670,9 +607,7 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
         quiz: [
@@ -684,9 +619,7 @@ export function LessonsProvider({ children }) {
             b: "derivatives",
             c: "integrals",
             d: "surd",
-            correctAnswer: function () {
-              return this.d;
-            },
+            correctAnswer: "a",
           },
           {
             id: 2,
@@ -695,9 +628,7 @@ export function LessonsProvider({ children }) {
             b: "a variable",
             c: "a function",
             d: "all of the above",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
       },
@@ -723,9 +654,7 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
         quiz: [
@@ -737,9 +666,7 @@ export function LessonsProvider({ children }) {
             b: "derivatives",
             c: "integrals",
             d: "surd",
-            correctAnswer: function () {
-              return this.d;
-            },
+            correctAnswer: "a",
           },
           {
             id: 2,
@@ -748,9 +675,7 @@ export function LessonsProvider({ children }) {
             b: "a variable",
             c: "a function",
             d: "all of the above",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
       },
@@ -775,9 +700,7 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
         quiz: [
@@ -789,9 +712,7 @@ export function LessonsProvider({ children }) {
             b: "derivatives",
             c: "integrals",
             d: "surd",
-            correctAnswer: function () {
-              return this.d;
-            },
+            correctAnswer: "a",
           },
           {
             id: 2,
@@ -800,9 +721,7 @@ export function LessonsProvider({ children }) {
             b: "a variable",
             c: "a function",
             d: "all of the above",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
       },
@@ -827,9 +746,7 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
         quiz: [
@@ -841,9 +758,7 @@ export function LessonsProvider({ children }) {
             b: "derivatives",
             c: "integrals",
             d: "surd",
-            correctAnswer: function () {
-              return this.d;
-            },
+            correctAnswer: "a",
           },
           {
             id: 2,
@@ -852,9 +767,7 @@ export function LessonsProvider({ children }) {
             b: "a variable",
             c: "a function",
             d: "all of the above",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
       },
@@ -879,9 +792,7 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
         quiz: [
@@ -893,9 +804,7 @@ export function LessonsProvider({ children }) {
             b: "derivatives",
             c: "integrals",
             d: "surd",
-            correctAnswer: function () {
-              return this.d;
-            },
+            correctAnswer: "a",
           },
           {
             id: 2,
@@ -904,9 +813,7 @@ export function LessonsProvider({ children }) {
             b: "a variable",
             c: "a function",
             d: "all of the above",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
       },
@@ -931,9 +838,7 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
         quiz: [
@@ -945,9 +850,7 @@ export function LessonsProvider({ children }) {
             b: "derivatives",
             c: "integrals",
             d: "surd",
-            correctAnswer: function () {
-              return this.d;
-            },
+            correctAnswer: "a",
           },
           {
             id: 2,
@@ -956,9 +859,7 @@ export function LessonsProvider({ children }) {
             b: "a variable",
             c: "a function",
             d: "all of the above",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
       },
@@ -983,9 +884,7 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
         quiz: [
@@ -997,9 +896,7 @@ export function LessonsProvider({ children }) {
             b: "derivatives",
             c: "integrals",
             d: "surd",
-            correctAnswer: function () {
-              return this.d;
-            },
+            correctAnswer: "a",
           },
           {
             id: 2,
@@ -1008,9 +905,7 @@ export function LessonsProvider({ children }) {
             b: "a variable",
             c: "a function",
             d: "all of the above",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
       },
@@ -1035,9 +930,7 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
         quiz: [
@@ -1049,9 +942,7 @@ export function LessonsProvider({ children }) {
             b: "derivatives",
             c: "integrals",
             d: "surd",
-            correctAnswer: function () {
-              return this.d;
-            },
+            correctAnswer: "a",
           },
           {
             id: 2,
@@ -1060,9 +951,7 @@ export function LessonsProvider({ children }) {
             b: "a variable",
             c: "a function",
             d: "all of the above",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
       },
@@ -1087,9 +976,7 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
         quiz: [
@@ -1101,9 +988,7 @@ export function LessonsProvider({ children }) {
             b: "derivatives",
             c: "integrals",
             d: "surd",
-            correctAnswer: function () {
-              return this.d;
-            },
+            correctAnswer: "a",
           },
           {
             id: 2,
@@ -1112,9 +997,7 @@ export function LessonsProvider({ children }) {
             b: "a variable",
             c: "a function",
             d: "all of the above",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
       },
@@ -1139,9 +1022,7 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
         quiz: [
@@ -1153,9 +1034,7 @@ export function LessonsProvider({ children }) {
             b: "derivatives",
             c: "integrals",
             d: "surd",
-            correctAnswer: function () {
-              return this.d;
-            },
+            correctAnswer: "a",
           },
           {
             id: 2,
@@ -1164,9 +1043,7 @@ export function LessonsProvider({ children }) {
             b: "a variable",
             c: "a function",
             d: "all of the above",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
       },
@@ -1191,9 +1068,7 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
         quiz: [
@@ -1205,9 +1080,7 @@ export function LessonsProvider({ children }) {
             b: "derivatives",
             c: "integrals",
             d: "surd",
-            correctAnswer: function () {
-              return this.d;
-            },
+            correctAnswer: "a",
           },
           {
             id: 2,
@@ -1216,9 +1089,7 @@ export function LessonsProvider({ children }) {
             b: "a variable",
             c: "a function",
             d: "all of the above",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
       },
@@ -1243,9 +1114,7 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
         quiz: [
@@ -1257,9 +1126,7 @@ export function LessonsProvider({ children }) {
             b: "derivatives",
             c: "integrals",
             d: "surd",
-            correctAnswer: function () {
-              return this.d;
-            },
+            correctAnswer: "a",
           },
           {
             id: 2,
@@ -1268,9 +1135,7 @@ export function LessonsProvider({ children }) {
             b: "a variable",
             c: "a function",
             d: "all of the above",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
       },
@@ -1295,9 +1160,7 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
         quiz: [
@@ -1309,9 +1172,7 @@ export function LessonsProvider({ children }) {
             b: "derivatives",
             c: "integrals",
             d: "surd",
-            correctAnswer: function () {
-              return this.d;
-            },
+            correctAnswer: "a",
           },
           {
             id: 2,
@@ -1320,9 +1181,7 @@ export function LessonsProvider({ children }) {
             b: "a variable",
             c: "a function",
             d: "all of the above",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
       },
@@ -1347,9 +1206,7 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
         quiz: [
@@ -1361,9 +1218,7 @@ export function LessonsProvider({ children }) {
             b: "derivatives",
             c: "integrals",
             d: "surd",
-            correctAnswer: function () {
-              return this.d;
-            },
+            correctAnswer: "a",
           },
           {
             id: 2,
@@ -1372,9 +1227,7 @@ export function LessonsProvider({ children }) {
             b: "a variable",
             c: "a function",
             d: "all of the above",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
       },
@@ -1399,9 +1252,7 @@ export function LessonsProvider({ children }) {
             b: "",
             c: "",
             d: "",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
         quiz: [
@@ -1413,9 +1264,7 @@ export function LessonsProvider({ children }) {
             b: "derivatives",
             c: "integrals",
             d: "surd",
-            correctAnswer: function () {
-              return this.d;
-            },
+            correctAnswer: "a",
           },
           {
             id: 2,
@@ -1424,9 +1273,7 @@ export function LessonsProvider({ children }) {
             b: "a variable",
             c: "a function",
             d: "all of the above",
-            correctAnswer: function () {
-              return this.a;
-            },
+            correctAnswer: "a",
           },
         ],
       },

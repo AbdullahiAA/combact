@@ -4,11 +4,17 @@ import "./assets/css/default.css";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+import { UserContextProvider } from "./context/UserContext";
+import { LessonsProvider } from "./context/LessonsContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <UserContextProvider>
+      <LessonsProvider>
+        <App />
+      </LessonsProvider>
+    </UserContextProvider>
   </React.StrictMode>
 );
 

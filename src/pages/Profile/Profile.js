@@ -1,7 +1,6 @@
 import React from "react";
 import Layout from "../../components/Layout/Layout";
 import { useUserContext } from "../../context/UserContext";
-// import avatar2 from "../../assets/img/avatar-2.jpg";
 
 function Profile() {
   const { userData } = useUserContext();
@@ -36,11 +35,6 @@ function Profile() {
           </div>
           <div className="card-body text-center">
             <div className="client-avatar mb-3">
-              {/* <img
-                className="img-fluid rounded-circle shadow-0"
-                src={avatar2}
-                alt="..."
-              /> */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="shadow-0 img-fluid rounded-circle"
