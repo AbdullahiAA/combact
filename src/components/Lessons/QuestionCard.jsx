@@ -21,9 +21,12 @@ function QuestionCard({ serialNumber, question }) {
   return (
     <form className="card" onSubmit={handleSubmit}>
       <div className="card-header">
-        <p className="mb-0">
-          {serialNumber}. {question?.question}
-        </p>
+        <p
+          className="mb-0"
+          dangerouslySetInnerHTML={{
+            __html: serialNumber + ". " + question?.question,
+          }}
+        ></p>
       </div>
       <div className="card-body p-0">
         <div className="p-3">
@@ -31,14 +34,14 @@ function QuestionCard({ serialNumber, question }) {
             <input
               className="form-check-input"
               type="radio"
-              name={`selected_option_for_${serialNumber}`}
-              id={`option_a_for_${serialNumber}`}
+              name={`selected_option_for_${serialNumber}_${question?.id}`}
+              id={`option_a_for_${serialNumber}_${question?.id}`}
               value="a"
               onChange={(e) => setSelectedOption(e.target.value)}
             />
             <label
               className="form-check-label text-gray-600 text-sm"
-              htmlFor={`option_a_for_${serialNumber}`}
+              htmlFor={`option_a_for_${serialNumber}_${question?.id}`}
             >
               {question.a}
             </label>
@@ -49,14 +52,14 @@ function QuestionCard({ serialNumber, question }) {
             <input
               className="form-check-input"
               type="radio"
-              name={`selected_option_for_${serialNumber}`}
-              id={`option_b_for_${serialNumber}`}
+              name={`selected_option_for_${serialNumber}_${question?.id}`}
+              id={`option_b_for_${serialNumber}_${question?.id}`}
               value="b"
               onChange={(e) => setSelectedOption(e.target.value)}
             />
             <label
               className="form-check-label text-gray-600 text-sm"
-              htmlFor={`option_b_for_${serialNumber}`}
+              htmlFor={`option_b_for_${serialNumber}_${question?.id}`}
             >
               {question.b}
             </label>
@@ -67,14 +70,14 @@ function QuestionCard({ serialNumber, question }) {
             <input
               className="form-check-input"
               type="radio"
-              name={`selected_option_for_${serialNumber}`}
-              id={`option_c_for_${serialNumber}`}
+              name={`selected_option_for_${serialNumber}_${question?.id}`}
+              id={`option_c_for_${serialNumber}_${question?.id}`}
               value="c"
               onChange={(e) => setSelectedOption(e.target.value)}
             />
             <label
               className="form-check-label text-gray-600 text-sm"
-              htmlFor={`option_c_for_${serialNumber}`}
+              htmlFor={`option_c_for_${serialNumber}_${question?.id}`}
             >
               {question.c}
             </label>
@@ -85,14 +88,14 @@ function QuestionCard({ serialNumber, question }) {
             <input
               className="form-check-input"
               type="radio"
-              name={`selected_option_for_${serialNumber}`}
-              id={`option_d_for_${serialNumber}`}
+              name={`selected_option_for_${serialNumber}_${question?.id}`}
+              id={`option_d_for_${serialNumber}_${question?.id}`}
               value="d"
               onChange={(e) => setSelectedOption(e.target.value)}
             />
             <label
               className="form-check-label text-gray-600 text-sm"
-              htmlFor={`option_d_for_${serialNumber}`}
+              htmlFor={`option_d_for_${serialNumber}_${question?.id}`}
             >
               {question.d}
             </label>

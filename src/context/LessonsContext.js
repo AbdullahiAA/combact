@@ -18,11 +18,11 @@ export function LessonsProvider({ children }) {
       {
         id: 1,
         title: "Introduction to Calculus",
-        status: "completed",
         objectives: [
           "The concept of Calculus.",
-          "Why calculus is an important concept in mathematics.",
-          "How calculus came to existence.",
+          "What does calculus deals with.",
+          "The three powerful tools of calculus: Limits, Derivatives and Integrals.",
+          "How does these three tools relates to on another.",
         ],
         video: {
           url: "https://www.youtube.com/embed/UukVP7Mg3TU",
@@ -31,55 +31,69 @@ export function LessonsProvider({ children }) {
         classDrill: [
           {
             id: 1,
-            question: "Who invented Calculus?",
-            a: "Pennie",
-            b: "Rollins",
-            c: "Dean",
-            d: "Roman",
-            correctAnswer: "a",
+            question: "Calculus deals with _____",
+            a: "Calculations",
+            b: "Change",
+            c: "Objects",
+            d: "What we don't see",
+            correctAnswer: "b",
           },
           {
-            id: 1,
-            question: "How many branches of Calculus do we have?",
-            a: "1",
-            b: "2",
-            c: "3",
-            d: "4",
-            correctAnswer: "a",
+            id: 2,
+            question: "One of the following is not a tool used in calculus.",
+            a: "Limits",
+            b: "Power",
+            c: "Derivatives",
+            d: "Integrals",
+            correctAnswer: "b",
           },
         ],
         quiz: [
           {
             id: 1,
-            question:
-              "Calculus basically deals with the following except _____.",
-            a: "limits",
-            b: "derivatives",
-            c: "integrals",
-            d: "surd",
-            correctAnswer: "a",
+            question: "Calculus deals with _____",
+            a: "Calculations",
+            b: "Change",
+            c: "Objects",
+            d: "What we don't see",
+            correctAnswer: "b",
           },
           {
             id: 2,
-            question: "The limit of a function at a point will give _____.",
-            a: "a constant",
-            b: "a variable",
-            c: "a function",
-            d: "all of the above",
+            question: "One of the following is not a tool used in calculus.",
+            a: "Limits",
+            b: "Power",
+            c: "Derivatives",
+            d: "Integrals",
+            correctAnswer: "b",
+          },
+          {
+            id: 4,
+            question: "Derivatives are built from _____.",
+            a: "Limits",
+            b: "Derivatives",
+            c: "Integrals",
+            d: "Surd",
             correctAnswer: "a",
+          },
+          {
+            id: 3,
+            question: "Integrals are seen as the inverse of _____.",
+            a: "Limits",
+            b: "Calculus",
+            c: "Integrals",
+            d: "Derivatives",
+            correctAnswer: "d",
           },
         ],
       },
       {
         id: 2,
-        // title: "Branches of Calculus",
-        title: "Average Rate of Change of a Function",
-        status: "completed",
+        title: "Average Rate of Change of a Function I",
         objectives: [
-          // "The branches of Calculus.",
-          // "The differences between the branches of Calculus.",
-          "The slope of a function",
           "The average rate of a function",
+          "How to get the slope of a function",
+          "How function increases/decresases from one point to the other",
         ],
         video: {
           url: "https://www.youtube.com/embed/lQRiw264bnI",
@@ -88,11 +102,12 @@ export function LessonsProvider({ children }) {
         classDrill: [
           {
             id: 1,
-            question: "",
-            a: "",
-            b: "",
-            c: "",
-            d: "",
+            question:
+              "The slope of a function talks about _____ of that function.",
+            a: "Behaviour",
+            b: "Size",
+            c: "Volume",
+            d: "Power",
             correctAnswer: "a",
           },
         ],
@@ -100,32 +115,31 @@ export function LessonsProvider({ children }) {
           {
             id: 1,
             question:
-              "Calculus basically deals with the following except _____.",
-            a: "limits",
-            b: "derivatives",
-            c: "integrals",
-            d: "surd",
+              "The slope of a function talks about _____ of that function.",
+            a: "Behaviour",
+            b: "Size",
+            c: "Volume",
+            d: "Power",
             correctAnswer: "a",
           },
           {
             id: 2,
-            question: "The limit of a function at a point will give _____.",
-            a: "a constant",
-            b: "a variable",
-            c: "a function",
-            d: "all of the above",
+            question:
+              "The higher the slope of a line, the higher the line increases.",
+            a: "True",
+            b: "False",
+            c: "Maybe",
+            d: "All of the above",
             correctAnswer: "a",
           },
         ],
       },
       {
         id: 3,
-        // title: "Differentiation from the first principle",
         title: "Approximating the instantaneous Rate of Change of a Function",
-        status: "pending",
         objectives: [
-          "The steps involved in differentiating with the first principle.",
-          "How to apply the first principle to differentiate any given function.",
+          "What the instantaneous Rate of Change of a Function really means.",
+          "How to calculate the instantaneous Rate of Change of a Function.",
         ],
         video: {
           url: "https://www.youtube.com/embed/jTvTthjtIrk",
@@ -134,44 +148,44 @@ export function LessonsProvider({ children }) {
         classDrill: [
           {
             id: 1,
-            question: "",
-            a: "",
-            b: "",
-            c: "",
-            d: "",
-            correctAnswer: "a",
+            question:
+              "Instantaneous rate of change describes the change _____.",
+            a: "between three points",
+            b: "between two points",
+            c: "using only one point",
+            d: "for any series of points",
+            correctAnswer: "c",
           },
         ],
         quiz: [
           {
             id: 1,
             question:
-              "Calculus basically deals with the following except _____.",
-            a: "limits",
-            b: "derivatives",
-            c: "integrals",
-            d: "surd",
-            correctAnswer: "a",
+              "Instantaneous rate of change describes the change _____.",
+            a: "between three points",
+            b: "between two points",
+            c: "using only one point",
+            d: "for any series of points",
+            correctAnswer: "c",
           },
           {
             id: 2,
-            question: "The limit of a function at a point will give _____.",
-            a: "a constant",
-            b: "a variable",
-            c: "a function",
-            d: "all of the above",
+            question:
+              "The instantaneous rate of change can be estimated by calculating the average change of series of points closer to the initial point.",
+            a: "True",
+            b: "False",
+            c: "Maybe",
+            d: "All of the above",
             correctAnswer: "a",
           },
         ],
       },
       {
         id: 4,
-        // title: "Rules of differentiation (Differentiation of Polynomial)",
         title: "The limit of a function",
-        status: "not started",
         objectives: [
-          "The principal rule of differentiating a polynomial.",
-          "How to apply the rule to differentiate any given polynomials.",
+          "The behaviour of a function and what it is approaching.",
+          "The significant of limit of a function as it approaches a point.",
         ],
         video: {
           url: "https://www.youtube.com/embed/h_Rf_2OeSJU",
@@ -180,44 +194,40 @@ export function LessonsProvider({ children }) {
         classDrill: [
           {
             id: 1,
-            question: "",
-            a: "",
-            b: "",
-            c: "",
-            d: "",
-            correctAnswer: "a",
+            question: "The limit of f(x) = x + 2 as x approaches 4 is _____.",
+            a: "2",
+            b: "4",
+            c: "6",
+            d: "8",
+            correctAnswer: "c",
           },
         ],
         quiz: [
           {
             id: 1,
-            question:
-              "Calculus basically deals with the following except _____.",
-            a: "limits",
-            b: "derivatives",
-            c: "integrals",
-            d: "surd",
-            correctAnswer: "a",
+            question: "The limit of f(x) = x + 2 as x approaches 4 is _____.",
+            a: "2",
+            b: "4",
+            c: "6",
+            d: "8",
+            correctAnswer: "c",
           },
           {
             id: 2,
-            question: "The limit of a function at a point will give _____.",
-            a: "a constant",
-            b: "a variable",
-            c: "a function",
-            d: "all of the above",
-            correctAnswer: "a",
+            question: "The limit of f(x) = x - 1 as x approaches 7 is _____.",
+            a: "2",
+            b: "4",
+            c: "6",
+            d: "8",
+            correctAnswer: "c",
           },
         ],
       },
       {
         id: 5,
-        // title: "Rules of differentiation (Chain rule)",
-        title: "Average rate of change of a function",
-        status: "not started",
+        title: "Average Rate of Change of a Function II",
         objectives: [
-          "When to apply the chain rule for differentiating functions.",
-          "Differentiating functions using chain rule.",
+          "The basics to finding the average rate of change for a function, and the formulas involved.",
         ],
         video: {
           url: "https://www.youtube.com/embed/YpYSEXAxMJ0",
@@ -226,45 +236,34 @@ export function LessonsProvider({ children }) {
         classDrill: [
           {
             id: 1,
-            question: "",
-            a: "",
-            b: "",
-            c: "",
-            d: "",
-            correctAnswer: "a",
+            question:
+              "The average rate of change of a function can be calculated by _____",
+            a: "the distance",
+            b: "the height",
+            c: "the lenght",
+            d: "the slope",
+            correctAnswer: "d",
           },
         ],
         quiz: [
           {
             id: 1,
             question:
-              "Calculus basically deals with the following except _____.",
-            a: "limits",
-            b: "derivatives",
-            c: "integrals",
-            d: "surd",
-            correctAnswer: "a",
-          },
-          {
-            id: 2,
-            question: "The limit of a function at a point will give _____.",
-            a: "a constant",
-            b: "a variable",
-            c: "a function",
-            d: "all of the above",
-            correctAnswer: "a",
+              "The average rate of change of a function can be calculated by _____",
+            a: "the distance",
+            b: "the height",
+            c: "the lenght",
+            d: "the slope",
+            correctAnswer: "d",
           },
         ],
       },
       {
         id: 6,
-        // title: "Rules of differentiation (Product rule)",
         title:
           "Find the average rate of change of a function between two points",
-        status: "not started",
         objectives: [
-          "When to apply the product rule for differentiating functions.",
-          "Differentiating functions using product rule.",
+          "How to find the average rate of change of a function, when given two x values",
         ],
         video: {
           url: "https://www.youtube.com/embed/jqIoqECyY0A",
@@ -273,45 +272,34 @@ export function LessonsProvider({ children }) {
         classDrill: [
           {
             id: 1,
-            question: "",
-            a: "",
-            b: "",
-            c: "",
-            d: "",
-            correctAnswer: "a",
+            question:
+              "Find the average rate of change of f(x) from x = 1 to x = 3.<br /> &nbsp;&nbsp;&nbsp; f(x) = -x&sup3; + 2x -1",
+            a: "11",
+            b: "-11",
+            c: "22",
+            d: "-22",
+            correctAnswer: "b",
           },
         ],
         quiz: [
           {
             id: 1,
             question:
-              "Calculus basically deals with the following except _____.",
-            a: "limits",
-            b: "derivatives",
-            c: "integrals",
-            d: "surd",
-            correctAnswer: "a",
-          },
-          {
-            id: 2,
-            question: "The limit of a function at a point will give _____.",
-            a: "a constant",
-            b: "a variable",
-            c: "a function",
-            d: "all of the above",
-            correctAnswer: "a",
+              "Find the average rate of change of f(x) from x = 1 to x = 3.<br /> &nbsp;&nbsp;&nbsp; f(x) = -x&sup3; + 2x -1",
+            a: "11",
+            b: "-11",
+            c: "22",
+            d: "-22",
+            correctAnswer: "b",
           },
         ],
       },
       {
         id: 7,
-        // title: "Rules of differentiation (Quotient rule)",
         title:
           "Find the average rate of change of a function over some interval",
-        status: "not started",
         objectives: [
-          "When to apply the quotient rule for differentiating functions.",
-          "Differentiating functions using quotient rule.",
+          "How to find the average rate of change of a function over some interval.",
         ],
         video: {
           url: "https://www.youtube.com/embed/1Hoev0SIzjw",
@@ -319,12 +307,12 @@ export function LessonsProvider({ children }) {
         },
         classDrill: [
           {
-            id: 1,
-            question: "",
-            a: "",
-            b: "",
-            c: "",
-            d: "",
+            question:
+              "Find the average rate of change of f(x) on the interval [2. 3].<br /> &nbsp;&nbsp;&nbsp; f(x) = x&sup3; + 1",
+            a: "19",
+            b: "20",
+            c: "21",
+            d: "22",
             correctAnswer: "a",
           },
         ],
@@ -332,29 +320,18 @@ export function LessonsProvider({ children }) {
           {
             id: 1,
             question:
-              "Calculus basically deals with the following except _____.",
-            a: "limits",
-            b: "derivatives",
-            c: "integrals",
-            d: "surd",
-            correctAnswer: "a",
-          },
-          {
-            id: 2,
-            question: "The limit of a function at a point will give _____.",
-            a: "a constant",
-            b: "a variable",
-            c: "a function",
-            d: "all of the above",
+              "Find the average rate of change of f(x) on the interval [2. 3].<br /> &nbsp;&nbsp;&nbsp; f(x) = x&sup3; + 1",
+            a: "19",
+            b: "20",
+            c: "21",
+            d: "22",
             correctAnswer: "a",
           },
         ],
       },
       {
         id: 8,
-        // title: "Limits & Continuity",
         title: "The limit of a function basics",
-        status: "not started",
         objectives: [
           "What limits and continuity is all about.",
           "How to find limit of a function as it tends to a particular point.",
@@ -399,9 +376,7 @@ export function LessonsProvider({ children }) {
       },
       {
         id: 9,
-        // title: "Limits & Continuity",
         title: "The laws of limits",
-        status: "not started",
         objectives: [
           "What limits and continuity is all about.",
           "How to find limit of a function as it tends to a particular point.",
@@ -446,9 +421,7 @@ export function LessonsProvider({ children }) {
       },
       {
         id: 10,
-        // title: "Limits & Continuity",
         title: "Use the limit laws to find the limit of a line",
-        status: "not started",
         objectives: [
           "What limits and continuity is all about.",
           "How to find limit of a function as it tends to a particular point.",
@@ -493,9 +466,7 @@ export function LessonsProvider({ children }) {
       },
       {
         id: 11,
-        // title: "Limits & Continuity",
         title: "What is a one sided limit",
-        status: "not started",
         objectives: [
           "What limits and continuity is all about.",
           "How to find limit of a function as it tends to a particular point.",
@@ -540,9 +511,7 @@ export function LessonsProvider({ children }) {
       },
       {
         id: 12,
-        // title: "Limits & Continuity",
         title: "How to find the value of a one sided limit using the equation",
-        status: "not started",
         objectives: [
           "What limits and continuity is all about.",
           "How to find limit of a function as it tends to a particular point.",
@@ -587,9 +556,7 @@ export function LessonsProvider({ children }) {
       },
       {
         id: 13,
-        // title: "Limits & Continuity",
         title: "Continuous functions",
-        status: "not started",
         objectives: [
           "What limits and continuity is all about.",
           "How to find limit of a function as it tends to a particular point.",
@@ -634,9 +601,7 @@ export function LessonsProvider({ children }) {
       },
       {
         id: 14,
-        // title: "Limits & Continuity",
         title: "Limits involving infinity",
-        status: "not started",
         objectives: [
           "What limits and continuity is all about.",
           "How to find limit of a function as it tends to a particular point.",
@@ -682,7 +647,6 @@ export function LessonsProvider({ children }) {
       {
         id: 15,
         title: "How to find limits with infinity using the equation",
-        status: "not started",
         objectives: [
           "What limits and continuity is all about.",
           "How to find limit of a function as it tends to a particular point.",
@@ -728,7 +692,6 @@ export function LessonsProvider({ children }) {
       {
         id: 16,
         title: "Understanding the derivative of a function at a point",
-        status: "not started",
         objectives: [
           "What limits and continuity is all about.",
           "How to find limit of a function as it tends to a particular point.",
@@ -774,7 +737,6 @@ export function LessonsProvider({ children }) {
       {
         id: 17,
         title: "Find the derivative of a function at a point",
-        status: "not started",
         objectives: [
           "What limits and continuity is all about.",
           "How to find limit of a function as it tends to a particular point.",
@@ -820,7 +782,6 @@ export function LessonsProvider({ children }) {
       {
         id: 18,
         title: "Understanding the derivative as a function",
-        status: "not started",
         objectives: [
           "What limits and continuity is all about.",
           "How to find limit of a function as it tends to a particular point.",
@@ -866,7 +827,6 @@ export function LessonsProvider({ children }) {
       {
         id: 19,
         title: "Finding the derivative of a function using limits",
-        status: "not started",
         objectives: [
           "What limits and continuity is all about.",
           "How to find limit of a function as it tends to a particular point.",
@@ -912,7 +872,6 @@ export function LessonsProvider({ children }) {
       {
         id: 20,
         title: "The basic rules for derivatives",
-        status: "not started",
         objectives: [
           "What limits and continuity is all about.",
           "How to find limit of a function as it tends to a particular point.",
@@ -958,7 +917,6 @@ export function LessonsProvider({ children }) {
       {
         id: 21,
         title: "How to find the derivative of a function using the power rule",
-        status: "not started",
         objectives: [
           "What limits and continuity is all about.",
           "How to find limit of a function as it tends to a particular point.",
@@ -1004,7 +962,6 @@ export function LessonsProvider({ children }) {
       {
         id: 22,
         title: "The product rule for derivatives",
-        status: "not started",
         objectives: [
           "What limits and continuity is all about.",
           "How to find limit of a function as it tends to a particular point.",
@@ -1050,7 +1007,6 @@ export function LessonsProvider({ children }) {
       {
         id: 23,
         title: "The quotient rule for derivatives",
-        status: "not started",
         objectives: [
           "What limits and continuity is all about.",
           "How to find limit of a function as it tends to a particular point.",
@@ -1096,7 +1052,6 @@ export function LessonsProvider({ children }) {
       {
         id: 24,
         title: "The chain rule for derivatives",
-        status: "not started",
         objectives: [
           "What limits and continuity is all about.",
           "How to find limit of a function as it tends to a particular point.",
@@ -1142,7 +1097,6 @@ export function LessonsProvider({ children }) {
       {
         id: 25,
         title: "Understanding the chain rule",
-        status: "not started",
         objectives: [
           "What limits and continuity is all about.",
           "How to find limit of a function as it tends to a particular point.",
@@ -1188,7 +1142,6 @@ export function LessonsProvider({ children }) {
       {
         id: 26,
         title: "Chain rule using Leibniz notation",
-        status: "not started",
         objectives: [
           "What limits and continuity is all about.",
           "How to find limit of a function as it tends to a particular point.",
@@ -1234,7 +1187,6 @@ export function LessonsProvider({ children }) {
       {
         id: 27,
         title: "Finding higher derivatives",
-        status: "not started",
         objectives: [
           "What limits and continuity is all about.",
           "How to find limit of a function as it tends to a particular point.",

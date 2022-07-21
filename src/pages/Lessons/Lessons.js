@@ -1,28 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "../../components/axios/axios";
 import Layout from "../../components/Layout/Layout";
 import { useLessons } from "../../context/LessonsContext";
-import { toast } from "react-hot-toast";
 import { useUserContext } from "../../context/UserContext";
 
 function Lessons() {
   const { lessons } = useLessons();
-  const { fetchLatestUserData, userData } = useUserContext();
+  const { userData } = useUserContext();
 
   const [completedLessons, setCompletedLessons] = useState([]);
-
-  function markLessonAsViewed(lesson_ID) {
-    axios.get(`/lessons/${lesson_ID}/mark`).then((res) => {
-      if (res?.data?.status) {
-        toast.success(res?.data?.message);
-      } else {
-        toast.error(res?.data?.message);
-      }
-
-      fetchLatestUserData();
-    });
-  }
 
   useEffect(() => {
     setCompletedLessons(userData?.student?.completed_lessons);
@@ -31,12 +17,7 @@ function Lessons() {
   return (
     <Layout pageTitle="Lessons">
       {lessons?.map((lesson, key) => (
-        <Link
-          to={`/lessons/${lesson.id}`}
-          key={key}
-          onClick={() => markLessonAsViewed(lesson.id)}
-          className="card mb-3 p-3"
-        >
+        <Link to={`/lessons/${lesson.id}`} key={key} className="card mb-3 p-3">
           <div className="d-flex align-items-center justify-content-between gx-lg-5 gy-3">
             <div className="d-flex align-items-center">
               <svg

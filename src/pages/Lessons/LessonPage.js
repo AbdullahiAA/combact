@@ -5,10 +5,15 @@ import Layout from "../../components/Layout/Layout";
 import VideoFrame from "../../components/Lessons/VideoFrame";
 import { useLessons } from "../../context/LessonsContext";
 import QuestionCard from "../../components/Lessons/QuestionCard";
+import axios from "../../components/axios/axios";
+import { toast } from "react-hot-toast";
+import { useUserContext } from "../../context/UserContext";
 
 function LessonPage() {
   const { lessonID } = useParams();
   const { getLesson } = useLessons();
+
+  const { fetchLatestUserData } = useUserContext();
 
   const [lesson, setLesson] = useState();
   const [isLoading, setIsLoading] = useState(true);
@@ -17,6 +22,18 @@ function LessonPage() {
     setLesson(() => getLesson(lessonID));
     setIsLoading(false);
   }, [getLesson, lessonID]);
+
+  function markLessonAsCompleted() {
+    axios.get(`/lessons/${lessonID}/mark`).then((res) => {
+      if (res?.data?.status) {
+        toast.success(res?.data?.message);
+      } else {
+        toast.error(res?.data?.message);
+      }
+
+      fetchLatestUserData();
+    });
+  }
 
   if (!lesson && !isLoading)
     return (
@@ -105,6 +122,12 @@ function LessonPage() {
           >
             Previous
           </Link>
+          <button
+            className="btn btn-outline-primary lessonNavBtn"
+            onClick={markLessonAsCompleted}
+          >
+            Mark Lesson as Completed
+          </button>
           <Link
             to={`/lessons/${lesson?.id + 1}`}
             className="btn btn-outline-primary lessonNavBtn"
