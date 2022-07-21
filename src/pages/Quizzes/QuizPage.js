@@ -57,20 +57,26 @@ function QuizPage() {
         </div>
       </div>
 
-      {/* Question Card */}
-      {quizzes?.map((quiz, key) => (
-        <QuestionCard key={key} serialNumber={key + 1} question={quiz} />
-      ))}
+      {quizzes?.length > 0 ? (
+        <>
+          {/* Question Card */}
+          {quizzes?.map((quiz, key) => (
+            <QuestionCard key={key} serialNumber={key + 1} question={quiz} />
+          ))}
 
-      {/* Mark as completed */}
-      <div className="d-flex justify-content-end">
-        <button
-          className="btn btn-outline-primary"
-          onClick={markQuizAsCompleted}
-        >
-          Mark Quiz as Completed
-        </button>
-      </div>
+          {/* Mark as completed */}
+          <div className="d-flex justify-content-end">
+            <button
+              className="btn btn-outline-primary"
+              onClick={markQuizAsCompleted}
+            >
+              Mark Quiz as Completed
+            </button>
+          </div>
+        </>
+      ) : (
+        <h4 className="text-palatinateBlue fw-normal">Coming soon...</h4>
+      )}
     </Layout>
   );
 }

@@ -6,12 +6,13 @@ function QuestionCard({ serialNumber, question }) {
 
   function handleSubmit(e) {
     e.preventDefault();
+    toast.remove();
 
     if (!selectedOption) {
       toast.error("Please choose an option for question " + serialNumber);
     } else {
       if (selectedOption === question.correctAnswer) {
-        toast.success("Amazing Champ! You got the answer right");
+        toast.success("Amazing Champ! You got the answer correctly");
       } else {
         toast.error("Oops! You chosed a wrong option");
       }

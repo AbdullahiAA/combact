@@ -15540,3 +15540,7 @@ ABOUT PAGE
     max-width: 75%;
   }
 }
+
+.resource-link:hover {
+  text-decoration: underline !important;
+}

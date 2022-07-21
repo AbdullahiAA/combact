@@ -96,22 +96,24 @@ function LessonPage() {
       </div>
 
       {/* A Short Quiz */}
-      <div className="card">
-        <div className="card-header">
-          <h3 className="mb-0 text-palatinateBlue fw-normal">
-            It's time for a class drill, Champ!
-          </h3>
+      {lesson?.classDrill.length > 0 && (
+        <div className="card">
+          <div className="card-header">
+            <h3 className="mb-0 text-palatinateBlue fw-normal">
+              It's time for a class drill, Champ!
+            </h3>
+          </div>
+          <div className="card-body">
+            {lesson?.classDrill?.map((question, key) => (
+              <QuestionCard
+                key={key}
+                serialNumber={key + 1}
+                question={question}
+              />
+            ))}
+          </div>
         </div>
-        <div className="card-body">
-          {lesson?.classDrill?.map((question, key) => (
-            <QuestionCard
-              key={key}
-              serialNumber={key + 1}
-              question={question}
-            />
-          ))}
-        </div>
-      </div>
+      )}
 
       {/* Navigation Button */}
       <div className="d-flex justify-content-end">
