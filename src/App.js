@@ -20,7 +20,7 @@ import { useEffect } from "react";
 function App() {
   const { fetchLatestUserData } = useUserContext();
 
-  useEffect(() => fetchLatestUserData());
+  useEffect(() => fetchLatestUserData(), []);
 
   return (
     <BrowserRouter>

@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import Layout from "../../components/Layout/Layout";
 import { useLessons } from "../../context/LessonsContext";
+import { useUserContext } from "../../context/UserContext";
 // import { useUserContext } from "../../context/UserContext";
 // import avatar1 from "../assets/img/avatar-1.jpg";
 // import avatar2 from "../assets/img/avatar-2.jpg";
@@ -11,7 +12,7 @@ import { useLessons } from "../../context/LessonsContext";
 // import avatar5 from "../assets/img/avatar-5.jpg";
 
 function Dashboard() {
-  // const {  } = useUserContext();
+  const { userData } = useUserContext();
 
   const { lessons } = useLessons();
   const [lessonsCount, setLessonsCount] = useState(0);
@@ -51,16 +52,23 @@ function Dashboard() {
                       <div
                         className="progress-bar bg-violet"
                         role="progressbar"
-                        style={{ width: "0%", height: "4px" }}
-                        aria-valuenow="0"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
+                        style={{
+                          width: `${
+                            lessonsCount &&
+                            (userData?.student?.completed_lessons.length /
+                              lessonsCount) *
+                              100
+                          }%`,
+                          height: "4px",
+                        }}
                       ></div>
                     </div>
                   </div>
                 </div>
                 <div className="number">
-                  <strong className="text-lg">0</strong>
+                  <strong className="text-lg">
+                    {userData?.student?.completed_lessons.length}
+                  </strong>
                 </div>
               </div>
             </div>
@@ -140,16 +148,23 @@ function Dashboard() {
                       <div
                         className="progress-bar bg-green"
                         role="progressbar"
-                        style={{ width: "0%", height: "4px" }}
-                        aria-valuenow="0"
-                        aria-valuemin="0"
-                        aria-valuemax="100"
+                        style={{
+                          width: `${
+                            lessonsCount &&
+                            (userData?.student?.attempted_quizzes.length /
+                              lessonsCount) *
+                              100
+                          }%`,
+                          height: "4px",
+                        }}
                       ></div>
                     </div>
                   </div>
                 </div>
                 <div className="number">
-                  <strong className="text-lg">0</strong>
+                  <strong className="text-lg">
+                    {userData?.student?.attempted_quizzes.length}
+                  </strong>
                 </div>
               </div>
             </div>

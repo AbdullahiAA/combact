@@ -11,18 +11,22 @@ function LessonPage() {
   const { getLesson } = useLessons();
 
   const [lesson, setLesson] = useState();
+  const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => setLesson(() => getLesson(lessonID)), [getLesson, lessonID]);
+  useEffect(() => {
+    setLesson(() => getLesson(lessonID));
+    setIsLoading(false);
+  }, [getLesson, lessonID]);
 
-  // if (!lesson)
-  //   return (
-  //     <div className="d-flex justify-content-center align-items-center vh-100">
-  //       <h1>
-  //         Lesson not found.{" "}
-  //         <Link to={"/lessons"}>Please go back to the lessons page</Link>
-  //       </h1>
-  //     </div>
-  //   );
+  if (!lesson && !isLoading)
+    return (
+      <div className="d-flex justify-content-center align-items-center vh-100">
+        <h1>
+          Lesson not found.{" "}
+          <Link to={"/lessons"}>Please go back to the lessons page</Link>
+        </h1>
+      </div>
+    );
 
   return (
     <Layout

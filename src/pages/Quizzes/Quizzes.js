@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useState } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Layout from "../../components/Layout/Layout";
 import { useLessons } from "../../context/LessonsContext";
+import { useUserContext } from "../../context/UserContext";
 
 function Quizzes() {
   const { lessons } = useLessons();
+  const { userData } = useUserContext();
+
+  const [attemptedQuizzes, setAttemptedQuizzes] = useState([]);
+
+  useEffect(() => {
+    setAttemptedQuizzes(userData?.student?.attempted_quizzes);
+  }, [userData]);
+
   return (
     <Layout pageTitle={"Quizzes"}>
       <h3 className="fw-normal mb-4">
@@ -14,10 +24,11 @@ function Quizzes() {
       {lessons.map((lesson, key) => (
         <Link to={`/quizzes/${lesson.id}`} key={key} className="card mb-3 p-3">
           <div className="d-flex align-items-center gap-0">
-            {lesson.status === "completed" ? (
+            {/* Differentiate the one that has been completed from the other */}
+            {attemptedQuizzes?.includes(lesson.id.toString()) ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="svg-icon svg-icon-light svg-icon-solid text-green ssvg-icon svg-icon-sm svg-icon-lidght flex-shrink-0 "
+                className="svg-icon svg-icon-sm svg-icon-light svg-icon-solid text-green flex-shrink-0 "
                 viewBox="0 0 20 20"
                 fill="currentColor"
               >
@@ -29,7 +40,7 @@ function Quizzes() {
               </svg>
             ) : (
               <svg
-                className="svg-icon svg-icon-sm svg-icon-light me-2 flex-shrink-0 text-palatinateBlue"
+                className="svg-icon svg-icon-sm svg-icon-light flex-shrink-0 text-palatinateBlue"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
